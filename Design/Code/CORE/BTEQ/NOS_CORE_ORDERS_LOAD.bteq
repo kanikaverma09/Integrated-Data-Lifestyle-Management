@@ -1,0 +1,58 @@
+
+
+/*########################################################################
+# Opening the BTEQ Script
+##########################################################################*/
+
+
+
+.set width 2555
+.set pagelength 2555
+
+.LOGMECH LDAP
+.LOGON tdprd.td.teradata.com/<USERNAME>,<PASSWORD>;
+
+
+INSERT INTO  RK250076.CORE_NOS_AWS_ORDERS  (
+LOCATION
+,THEYEAR
+,THEMONTH
+,SALES_DATE
+,CUSTOMER_ID
+,STORE_ID
+,BASKET_ID
+,PRODUCT_ID
+,SALES_QUANTITY
+,DISCOUNT_AMOUNT
+,Source_System
+,LOAD_DTTM
+ )
+SELECT
+LOCATION
+,THEYEAR
+,THEMONTH
+,SALES_DATE
+,CUSTOMER_ID
+,STORE_ID
+,BASKET_ID
+,PRODUCT_ID
+,SALES_QUANTITY
+,DISCOUNT_AMOUNT
+,'NOS' AS Source_System
+,CURRENT_TIMESTAMP(0) AS LOAD_DTTM
+FROM
+RK250076.STG_NOS_AWS_ORDERS SNAO;
+
+
+.IF ERRORCODE <> 0 THEN .EXIT ERRORCODE; 
+
+
+/*########################################################################################### 
+
+#  Closing the BTEQ Script, Session Closed and Logging off 
+
+###########################################################################################*/ 
+
+.LOGOFF 
+
+.QUIT 

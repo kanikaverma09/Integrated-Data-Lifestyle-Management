@@ -1,0 +1,74 @@
+DEFINE JOB Export_to_File
+DESCRIPTION 'Export rows for CCN'
+(
+DEFINE SCHEMA ITP_ABC
+ (
+      "id" INTEGER ,
+      Product_Category VARCHAR(100),
+      Product_Cost DECIMAL(6,2),
+      Product_Name VARCHAR(255),
+      Recomsale_Price DECIMAL(6,2),
+      Serving_Size VARCHAR(100),
+      Source_System VARCHAR(10),
+      EFF_START_DTTM TIMESTAMP(0),
+      EFF_END_DTTM TIMESTAMP(0),
+      CURR_IND CHAR(1),
+      LOAD_DTTM TIMESTAMP(0)
+);
+
+
+DEFINE OPERATOR File_Writer 
+	TYPE DATACONNECTOR CONSUMER
+	SCHEMA ITP_ABC	
+	ATTRIBUTES 
+		(	VARCHAR FileName = 'SEM_View_Product_Export.csv',	
+ 			VARCHAR Format  = 'DELIMITED',
+ 			VARCHAR OpenMode = 'Write', 
+ 			VARCHAR IndicatorMode = 'N',
+			VARCHAR TextDelimiter = ','
+			
+			
+		); 
+
+
+DEFINE OPERATOR PROD_EXPORT
+	TYPE EXPORT
+	SCHEMA ITP_ABC
+	ATTRIBUTES
+		(
+			        
+				VARCHAR TdPid='tdprd.td.teradata.com',
+       			VARCHAR UserName='SS255313',
+        		VARCHAR UserPassWord='',
+				INTEGER	MaxSessions = 2,
+				VARCHAR LogonMech     = 'LDAP',
+				VARCHAR	SelectStmt = 
+						'Select id,
+      Product_Category,
+      Product_Cost,
+      Product_Name,
+      Recomsale_Price,
+      Serving_Size,
+      Source_System,
+      EFF_START_DTTM,
+      EFF_END_DTTM,
+      CURR_IND,
+      LOAD_DTTM  from	MP255078.CORE_AZURE_RETAIL_PRODUCT;'	  
+		);
+
+APPLY TO OPERATOR (File_Writer)
+	SELECT
+      "id",
+      Product_Category,
+      Product_Cost,
+      Product_Name,
+      Recomsale_Price,
+      Serving_Size,
+      Source_System,
+      EFF_START_DTTM,
+      EFF_END_DTTM,
+      CURR_IND,
+      LOAD_DTTM
+	  FROM OPERATOR (PROD_EXPORT);
+
+);

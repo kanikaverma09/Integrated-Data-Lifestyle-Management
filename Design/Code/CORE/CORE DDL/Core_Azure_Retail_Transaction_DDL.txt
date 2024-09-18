@@ -1,0 +1,54 @@
+------------------------------------------------------------- Core Table DDL -------------------------------------------------------------
+
+CREATE MULTISET TABLE AR186005.CORE_AZURE_RETAIL_TRANSACTION_Testing ,FALLBACK ,
+     NO BEFORE JOURNAL,
+     NO AFTER JOURNAL,
+     CHECKSUM = DEFAULT,
+     DEFAULT MERGEBLOCKRATIO,
+     MAP = TD_MAP1
+     (
+      Transaction_ID INTEGER NOT NULL,
+      Coupon_Code VARCHAR(100) CHARACTER SET Latin NOT CaseSpecific,
+      Coupon_Type VARCHAR(100) CHARACTER SET Latin COMPRESS ('Regional','Multi-Use Personal','One-time Personal','National') NOT CaseSpecific,
+      Created_At TIMESTAMP(6) NOT NULL,
+	  Sell_Date DATE FORMAT 'YYYY-MM-DD',
+      Customer_Name VARCHAR(100) CHARACTER SET Latin NOT CaseSpecific,
+      Customer_Review BYTEINT,
+      Gross_Margin DECIMAL(5,2),
+      Order_Type VARCHAR(50) CHARACTER SET Latin COMPRESS ('call-in','drive-thru','in-store','mobile-app') NOT CaseSpecific,
+      Payment_Type VARCHAR(50) CHARACTER SET Latin COMPRESS ('Paypal','Gift Card','Stripe','Debit Card','Cash','Google Pay','Credit Card','Apple Pay') NOT CaseSpecific,
+      Amount DECIMAL(5,2),
+      Serving_Time INTEGER,
+      Txn_Id VARCHAR(50) CHARACTER SET Latin NOT CaseSpecific,
+      Product_Id INTEGER NOT NULL,
+      Store_Id INTEGER NOT NULL,
+      Customer_id INTEGER NOT NULL,
+	  Source_System VARCHAR(10) CHARACTER SET LATIN  COMPRESS ('AZURE') NOT CASESPECIFIC NOT NULL,
+      LOAD_DTTM TIMESTAMP(0) NOT NULL)
+PRIMARY INDEX ( Transaction_ID )
+PARTITION BY (Range_N(Created_At BETWEEN TIMESTAMP '2013-01-01 00:00:00.000000' AND TIMESTAMP '2050-12-31 00:00:00.000000' EACH INTERVAL '1' DAY,NO RANGE, UNKNOWN),
+              RANGE_N(Store_id between 8000 and 90000 each '1'))
+INDEX (product_id)
+INDEX (customer_id),
+INDEX (store_id);
+
+
+--------------------------------------------------------- Core Aggregate Join Index DDL --------------------------------------
+
+CREATE JOIN INDEX AR186005.AZURE_RETAIL_TRANSACTION_IDX AS 
+SEL 
+st.Store_Id,
+cust.Cust_id AS Customer_Id,
+pro.id AS Product_Id,
+Transaction_ID,
+Sum(trans.amount) AS Amount,
+Sum(Gross_Margin) AS Gross_Margin
+FROM 
+AR186005.CORE_AZURE_RETAIL_TRANSACTION trans 
+INNER JOIN  KV255007.CORE_AZURE_RETAIL_STORE st
+ON trans.Store_Id=st.Store_Id
+INNER JOIN  MP255078.CORE_AZURE_RETAIL_CUSTOMER cust
+ON trans.Customer_id=cust.Cust_id 
+INNER JOIN  MP255078.CORE_AZURE_RETAIL_PRODUCT pro
+ON trans.Product_Id=pro.id
+GROUP BY 1,2,3,4;

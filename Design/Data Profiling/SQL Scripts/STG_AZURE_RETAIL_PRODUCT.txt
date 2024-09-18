@@ -1,0 +1,118 @@
+
+
+
+
+SELECT cast(1 as integer) sno,'AR186005.STG_AZURE_RETAIL_PRODUCT' AS TABLE_NAME,
+    CAST('id' AS varchar(255)) AS Attribute,
+    COUNT(*) AS Total_Records,
+   
+        SUM(
+    CASE
+        WHEN id IS NULL OR CAST(id AS VARCHAR(400)) = 'NULL' OR CAST(id AS VARCHAR(400) )= '' THEN 1 ELSE 0
+    END) AS  Count_Null_Records,
+        SUM(
+    CASE
+        WHEN CAST(id AS VARCHAR(400))= '0' THEN 1 ELSE 0
+    END) AS  ZeroCount,
+        COUNT(DISTINCT id) AS  Count_Distinct_Records,
+        COUNT(id) - COUNT(DISTINCT id)  AS  Count_Duplicates,
+        MAX(LENGTH(CAST(id AS VARCHAR(400)))) AS  Max_Length,
+        MIN(LENGTH(CAST(id AS VARCHAR(400)))) AS  Min_Length
+    FROM AR186005.STG_AZURE_RETAIL_PRODUCT
+    UNION ALL
+    
+SELECT cast(2 as integer) sno,'AR186005.STG_AZURE_RETAIL_PRODUCT' AS TABLE_NAME,
+    CAST('Product_Category' AS varchar(255)) AS Attribute,
+    COUNT(*) AS Total_Records,
+   
+        SUM(
+    CASE
+        WHEN Product_Category IS NULL OR CAST(Product_Category AS VARCHAR(400)) = 'NULL' OR CAST(Product_Category AS VARCHAR(400) )= '' THEN 1 ELSE 0
+    END) AS  Count_Null_Records,
+        SUM(
+    CASE
+        WHEN CAST(Product_Category AS VARCHAR(400))= '0' THEN 1 ELSE 0
+    END) AS  ZeroCount,
+        COUNT(DISTINCT Product_Category (CS)) AS  Count_Distinct_Records,
+        COUNT(Product_Category) - COUNT(DISTINCT Product_Category (CS))  AS  Count_Duplicates,
+        MAX(LENGTH(CAST(Product_Category AS VARCHAR(400)))) AS  Max_Length,
+        MIN(LENGTH(CAST(Product_Category AS VARCHAR(400)))) AS  Min_Length
+    FROM AR186005.STG_AZURE_RETAIL_PRODUCT
+    UNION ALL
+SELECT cast(3 as integer) sno,'AR186005.STG_AZURE_RETAIL_PRODUCT' AS TABLE_NAME,
+    CAST('Product_Cost' AS varchar(255)) AS Attribute,
+    COUNT(*) AS Total_Records,
+   
+        SUM(
+    CASE
+        WHEN Product_Cost IS NULL OR CAST(Product_Cost AS VARCHAR(400)) = 'NULL' OR CAST(Product_Cost AS VARCHAR(400) )= '' THEN 1 ELSE 0
+    END) AS  Count_Null_Records,
+        SUM(
+    CASE
+        WHEN CAST(Product_Cost AS VARCHAR(400))= '0' THEN 1 ELSE 0
+    END) AS  ZeroCount,
+        COUNT(DISTINCT Product_Cost) AS  Count_Distinct_Records,
+        COUNT(Product_Cost) - COUNT(DISTINCT Product_Cost)  AS  Count_Duplicates,
+        MAX(LENGTH(CAST(Product_Cost AS VARCHAR(400)))) AS  Max_Length,
+        MIN(LENGTH(CAST(Product_Cost AS VARCHAR(400)))) AS  Min_Length
+    FROM AR186005.STG_AZURE_RETAIL_PRODUCT
+    UNION ALL
+    SELECT cast(4 as integer) sno,'AR186005.STG_AZURE_RETAIL_PRODUCT' AS TABLE_NAME,
+    CAST('Product_Name' AS varchar(255)) AS Attribute,
+    COUNT(*) AS Total_Records,
+   
+        SUM(
+    CASE
+        WHEN Product_Name IS NULL OR CAST(Product_Name AS VARCHAR(400)) = 'NULL' OR CAST(Product_Name AS VARCHAR(400) )= '' THEN 1 ELSE 0
+    END) AS  Count_Null_Records,
+        SUM(
+    CASE
+        WHEN CAST(Product_Name AS VARCHAR(400))= '0' THEN 1 ELSE 0
+    END) AS  ZeroCount,
+        COUNT(DISTINCT Product_Name) AS  Count_Distinct_Records,
+        COUNT(Product_Name) - COUNT(DISTINCT Product_Name)  AS  Count_Duplicates,
+        MAX(LENGTH(CAST(Product_Name AS VARCHAR(400)))) AS  Max_Length,
+        MIN(LENGTH(CAST(Product_Name AS VARCHAR(400)))) AS  Min_Length
+    FROM AR186005.STG_AZURE_RETAIL_PRODUCT
+UNION ALL
+SELECT cast(5 as integer) sno,'AR186005.STG_AZURE_RETAIL_PRODUCT' AS TABLE_NAME,
+    CAST('Recomsale_Price' AS varchar(255)) AS Attribute,
+    COUNT(*) AS Total_Records,
+   
+        SUM(
+    CASE
+        WHEN Recomsale_Price IS NULL OR CAST(Recomsale_Price AS VARCHAR(400)) = 'NULL' OR CAST(Recomsale_Price AS VARCHAR(400) )= '' THEN 1 ELSE 0
+    END) AS  Count_Null_Records,
+        SUM(
+    CASE
+        WHEN CAST(Recomsale_Price AS VARCHAR(400))= '0' THEN 1 ELSE 0
+    END) AS  ZeroCount,
+        COUNT(DISTINCT Recomsale_Price) AS  Count_Distinct_Records,
+        COUNT(Recomsale_Price) - COUNT(DISTINCT Recomsale_Price)  AS  Count_Duplicates,
+        MAX(LENGTH(CAST(Recomsale_Price AS VARCHAR(400)))) AS  Max_Length,
+        MIN(LENGTH(CAST(Recomsale_Price AS VARCHAR(400)))) AS  Min_Length
+    FROM AR186005.STG_AZURE_RETAIL_PRODUCT
+    UNION ALL
+SELECT cast(6 as integer) sno,'AR186005.STG_AZURE_RETAIL_PRODUCT' AS TABLE_NAME,
+    CAST('Serving_Size' AS varchar(255)) AS Attribute,
+    COUNT(*) AS Total_Records,
+   
+        SUM(
+    CASE
+        WHEN Serving_Size IS NULL OR CAST(Serving_Size AS VARCHAR(400)) = 'NULL' OR CAST(Serving_Size AS VARCHAR(400) )= '' THEN 1 ELSE 0
+    END) AS  Count_Null_Records,
+        SUM(
+    CASE
+        WHEN CAST(Serving_Size AS VARCHAR(400))= '0' THEN 1 ELSE 0
+    END) AS  ZeroCount,
+        COUNT(DISTINCT Serving_Size) AS  Count_Distinct_Records,
+        COUNT(case when Serving_Size  is null then 99999999 else Serving_Size end) - COUNT(DISTINCT Serving_Size)  AS  Count_Duplicates,
+        MAX(LENGTH(CAST(coalesce(Serving_Size,'NaN') AS VARCHAR(400)))) AS  Max_Length,
+        MIN(LENGTH(CAST(coalesce(Serving_Size,'NaN') AS VARCHAR(400)))) AS  Min_Length
+    FROM AR186005.STG_AZURE_RETAIL_PRODUCT
+
+    
+    
+
+    
+ 

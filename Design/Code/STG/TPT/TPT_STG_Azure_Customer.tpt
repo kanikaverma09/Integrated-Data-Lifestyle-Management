@@ -1,0 +1,73 @@
+	DEFINE JOB Retail_Customer
+	DESCRIPTION 'loading data into table from file'
+	(
+	   DEFINE SCHEMA OPERATOR_SOURCE_SCHEMA
+	   DESCRIPTION 'OPERATORS INFORMATION'
+	   (
+	Cust_id VARCHAR(200)
+	,Age VARCHAR(200)
+	,Gender VARCHAR(200)
+	,Cust_name VARCHAR(200)
+	   );
+
+
+	   DEFINE OPERATOR LOAD_OPERATOR
+	   DESCRIPTION 'TERADATA PARALLEL TRANSPORTER LOAD OPERATOR'
+	   TYPE LOAD
+	   SCHEMA *
+	   ATTRIBUTES
+	   (
+		  INTEGER TenacityHours   = 1,
+		  INTEGER TenacitySleep   = 1,
+		  INTEGER BufferSize      = 16,
+		  INTEGER MaxSessions     = 1,
+		  INTEGER MinSessions     = 1,
+		  INTEGER ErrorLimit      = 1,
+		  VARCHAR TdpId	      = 	'tdprd.td.teradata.com',
+		  VARCHAR LogonMech       = 'LDAP',
+		  VARCHAR UserName        = '',
+		  VARCHAR UserPassword    = '',
+		  VARCHAR TargetTable     = 'SK186103.STG_AZURE_CUSTOMER',
+		  VARCHAR LogTable        = 'SK186103.AWS_CUSTOMER_STG_LOG',
+		  VARCHAR ErrorTable1     = 'SK186103.AWS_CUSTOMER_STG_ERROR1',
+		  VARCHAR ErrorTable2     = 'SK186103.AWS_CUSTOMER_STG_ERROR2'
+	   );
+
+	   DEFINE OPERATOR Operator_data_loading
+	   DESCRIPTION 'TERADATA PARALLEL TRANSPORTER DATACONNECTOR OPERATOR'
+	   TYPE DATACONNECTOR PRODUCER
+	   SCHEMA OPERATOR_SOURCE_SCHEMA
+	   ATTRIBUTES
+	   (
+		  VARCHAR FileName      = 'itp_retail_customer.csv',
+		  VARCHAR OpenMode      = 'Read',
+		  VARCHAR Format        = 'DELIMITED',
+		  INTEGER SKIPROWS      = 1, 
+		  VARCHAR TextDelimiter = ',',
+		  VARCHAR DirectoryPath = 'C:\Users\sk186103\OneDrive - Teradata\Desktop\ITP\Dataset_v0.1\Azure\Day_0'
+	   );
+			 Step Load_Table
+	   (
+		  APPLY 
+		(
+		'INSERT INTO SK186103.STG_AZURE_CUSTOMER
+		(  Cust_id
+		  ,Age
+		  ,Gender
+		  ,Cust_name
+		  ,Source_System 
+          ,LOAD_DTTM)
+		VALUES(:Cust_id,
+		:Age,:Gender,
+		:Cust_name,
+		''Azure''
+        , Current_Timestamp(6));')
+
+		  TO OPERATOR 
+		(
+		LOAD_OPERATOR
+		)
+		  SELECT * FROM OPERATOR (Operator_data_loading);
+	   );
+	   
+	);
