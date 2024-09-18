@@ -1,0 +1,574 @@
+id,productcategory,productcost,productname,recomsaleprice,servingsize
+4474,Protein Boxes & Bowls,5.95,Chicken & Quinoa Protein Bowl,6.35,
+4177,Hot Brew,4.00,Clover Brewed Coffee,4.00,GRANDE
+4549,Mercato,4.00,Mango & Coconut Yogurt Bowl,4.00,VENTI
+4200,Hot Brew,1.00,Iced Coffee with Milk,3.00,LARGE
+4169,Bottled Drinks,1.96,Teavana Pineapple Berry Iced Tea,3.62,
+4239,Espresso Beverages,4.00,Caramel Macchiato,7.00,LARGE
+4336,Espresso Beverages,3.00,Blonde Caff? Latte,4.00,GRANDE
+4477,Yogurt, Fruit & Spreads,2.00,Avocado Spread,2.00,VENTI
+4392,Blended Beverages,5.00,Java Chip Frappuccino Blended Coffee,7.00,LARGE
+4502,Sandwiches, Paninis & Salads,1.00,Chicken & Double-Smoked Bacon,2.00,LARGE
+4153,Bottled Drinks,3.69,Bottled Caramel Frappuccino Coffee Drink,7.66,
+4538,Mercato,4.00,Herbed Chicken & Manchego Cheese Sandwich,6.00,LARGE
+4428,Hot Breakfast,5.45,Sous Vide Egg Bites: Bacon & Gruyere,6.03,
+4569,Mercato,7.00,Vegan Superberry Acai,8.00,GRANDE
+4246,Espresso Beverages,6.00,Cinnamon Dolce Latte,6.00,GRANDE
+4289,Espresso Beverages,3.00,Iced Skinny Cinnamon Dolce Latte,3.00,VENTI
+4529,Mercato,1.00,Crispy Grilled Cheese Sandwich,4.00,LARGE
+4359,Espresso Beverages,1.00,Vanilla Latte,3.00,LARGE
+4404,Blended Beverages,5.00,S'mores Creme Frappuccino,6.00,LARGE
+"4111,Iced Tea,5.00,""Teavana Shaken Iced Passion Tango"""" Tea Lemonade"",5.00,VENTI"
+4116,Iced Tea,7.00,Teavana Shaken Peach Citrus White Tea Infusion,7.00,GRANDE
+4295,Espresso Beverages,4.00,Iced Blonde  Vanilla Bean Coconutmilk Latte,4.00,VENTI
+4094,Iced Tea,7.00,Teavana Shaken Iced Black Tea,8.00,LARGE
+4453,Bakery,3.68,Everything Bagel,5.40,
+4277,Espresso Beverages,6.00,Iced Caramel Macchiato,6.00,VENTI
+4433,Hot Breakfast,5.61,Spinach,8.14,
+4056,Refreshers Beverages,4.00,Pink Drink,5.00,GRANDE
+4042,Cold Brew,7.00,Cold Brew Coffee with Milk,7.00,VENTI
+4405,Blended Beverages,5.00,S'mores Creme Frappuccino,6.00,GRANDE
+4194,Hot Brew,3.00,Featured Dark Roast,5.00,LARGE
+4160,Bottled Drinks,4.58,Bottled Vanilla Frappuccino Coffee Drink,5.77,
+4065,Refreshers Beverages,4.00,Very Berry Hibiscus Lemonade Starbucks Refreshers,4.00,GRANDE
+4328,Espresso Beverages,4.00,Skinny Mocha,4.00,VENTI
+4018,Cold Brew,8.00,Iced Coffee with Milk,8.00,VENTI
+4439,Bakery,4.70,Blueberry Muffin,7.23,
+4344,Espresso Beverages,4.00,Blonde Doubleshot On Ice,6.00,LARGE
+4054,Refreshers Beverages,2.00,Mango Dragonfruit Starbucks Refreshers Beverage,2.00,VENTI
+"4061,Refreshers Beverages,6.00,""Strawberry Acai Starbucks Refreshers"""" Beverage"",9.00,LARGE"
+4363,Espresso Beverages,3.00,White Chocolate Mocha,4.00,GRANDE
+4455,Bakery,7.18,Frosted Doughnut Cake Pop,8.54,
+4531,Mercato,1.00,Crispy Grilled Cheese Sandwich,1.00,VENTI
+4560,Mercato,5.00,Smoked Pork Cubano,5.00,GRANDE
+4412,Blended Beverages,2.00,Strawberry Frappuccino Blended Creme,2.00,VENTI
+4571,Mercato,6.00,Za'atar Chicken & Lemon Tahini,6.00,LARGE
+4367,Blended Beverages,6.00,Caffe Vanilla Frappuccino Blended Coffee,6.00,VENTI
+4464,Bakery,6.00,Pumpkin Bread,7.79,
+4118,Iced Tea,3.00,Teavana Shaken Peach Citrus White Tea Infusion Lemonade,6.00,LARGE
+4299,Espresso Beverages,5.00,Iced Blonde Caffe Latte,7.00,LARGE
+4308,Espresso Beverages,1.00,Iced Blonde Flat White,3.00,LARGE
+4327,Espresso Beverages,4.00,Skinny Mocha,4.00,GRANDE
+4312,Espresso Beverages,1.00,Iced Blonde Vanilla Latte,2.00,GRANDE
+4144,Bottled Drinks,4.62,Starbucks Doubleshot Energy Mexican Mocha,7.09,
+4242,Espresso Beverages,5.00,Cinnamon Cloud Macchiato,7.00,LARGE
+4193,Hot Brew,1.00,Decaf Pike Place Roast,1.00,VENTI
+4080,Evolution Fresh,2.00,Evolution Fresh Organic Green Devotion,3.00,GRANDE
+4320,Espresso Beverages,5.00,Iced White Chocolate Mocha,7.00,LARGE
+4037,Cold Brew,1.00,Cold Brew Coffee,3.00,LARGE
+4218,Hot Brew,7.00,Cold Brew Coffee with Milk,9.00,LARGE
+4540,Mercato,4.00,Herbed Chicken & Manchego Cheese Sandwich,4.00,VENTI
+4294,Espresso Beverages,4.00,Iced Blonde  Vanilla Bean Coconutmilk Latte,4.00,GRANDE
+4011,Cold Brew,2.00,Cold Brew with Cascara Cold Foam,3.00,GRANDE
+4522,Mercato,2.00,Baja Black Bean Veggie Wrap,2.00,VENTI
+4089,Evolution Fresh,7.00,Evolution Fresh Watermelon,7.00,GRANDE
+"4109,Iced Tea,5.00,""Teavana Shaken Iced Passion Tango"""" Tea Lemonade"",6.00,LARGE"
+4047,Refreshers Beverages,7.00,Dragon Drink,7.00,GRANDE
+4430,Hot Breakfast,4.58,Sous Vide Egg Bites: Egg White & Red Pepper,6.17,
+4373,Blended Beverages,8.00,Caramel Ribbon Crunch Creme Frappuccino,8.00,VENTI
+"4063,Refreshers Beverages,6.00,""Strawberry Acai Starbucks Refreshers"""" Beverage"",6.00,VENTI"
+4457,Bakery,3.08,Iced Lemon Loaf Cake,6.20,
+4022,Cold Brew,2.00,Iced Espresso Classics - Caffe Mocha,4.00,LARGE
+4527,Mercato,5.00,Chipotle Chicken Wrap,5.00,GRANDE
+4292,Espresso Beverages,7.00,Iced Skinny Mocha,7.00,VENTI
+4201,Hot Brew,1.00,Iced Coffee with Milk,1.00,GRANDE
+4050,Refreshers Beverages,5.00,Mango Dragonfruit Lemonade Starbucks Refreshers Beverage,6.00,GRANDE
+4385,Blended Beverages,2.00,Coffee Frappuccino Blended Coffee,2.00,VENTI
+4318,Espresso Beverages,3.00,Iced Vanilla Latte,3.00,GRANDE
+4369,Blended Beverages,3.00,Caramel Frappuccino Blended Coffee,3.00,GRANDE
+4334,Espresso Beverages,1.00,Blonde Caff? Americano,1.00,VENTI
+4070,Refreshers Beverages,3.00,Violet Drink,5.00,LARGE
+4115,Iced Tea,7.00,Teavana Shaken Peach Citrus White Tea Infusion,9.00,LARGE
+4307,Espresso Beverages,2.00,Iced Blonde Cinnamon Cloud Macchiato,2.00,VENTI
+4346,Espresso Beverages,4.00,Blonde Doubleshot On Ice,4.00,VENTI
+4034,Cold Brew,6.00,Nitro Cold Brew with Sweet Cream,8.00,LARGE
+4546,Mercato,3.00,Honey BBQ Sriracha Chicken Sandwich,4.00,VENTI
+4393,Blended Beverages,5.00,Java Chip Frappuccino Blended Coffee,6.00,GRANDE
+4402,Blended Beverages,5.00,Mocha Frappuccino Blended Coffee,5.00,GRANDE
+4541,Mercato,1.00,Holiday Turkey & Stuffing Panini,2.00,LARGE
+4315,Espresso Beverages,2.00,Iced Vanilla Bean Coconutmilk Latte,2.00,GRANDE
+4545,Mercato,4.00,Honey BBQ Sriracha Chicken Sandwich,4.00,GRANDE
+4361,Espresso Beverages,2.00,Vanilla Latte,2.00,VENTI
+4145,Bottled Drinks,6.42,Starbucks Doubleshot Energy Mocha Drink,6.78,
+4041,Cold Brew,7.00,Cold Brew Coffee with Milk,7.00,GRANDE
+4006,Hot Brew,6.00,Hot Chocolate,7.00,VENTI
+4082,Evolution Fresh,3.00,Evolution Fresh Organic Strawberry Lemonade,3.00,LARGE
+4238,Espresso Beverages,2.00,Caramel Cloud Macchiato,2.00,VENTI
+4287,Espresso Beverages,3.00,Iced Skinny Cinnamon Dolce Latte,3.00,LARGE
+4523,Mercato,6.00,Chicken & Fig Spread Sandwich,7.00,LARGE
+4038,Cold Brew,1.00,Cold Brew Coffee,2.00,GRANDE
+4480,Yogurt, Fruit & Spreads,1.00,Berry Trio Parfait,2.00,VENTI
+4293,Espresso Beverages,4.00,Iced Blonde  Vanilla Bean Coconutmilk Latte,5.00,LARGE
+4520,Mercato,2.00,Baja Black Bean Veggie Wrap,3.00,LARGE
+4514,Sandwiches, Paninis & Salads,4.00,Tomato & Mozzarella,5.00,LARGE
+4475,Yogurt, Fruit & Spreads,2.00,Avocado Spread,2.00,LARGE
+4335,Espresso Beverages,3.00,Blonde Caff? Latte,4.00,LARGE
+4273,Espresso Beverages,6.00,Iced Caramel Cloud Macchiato,6.00,GRANDE
+4013,Cold Brew,6.00,Iced Coffee,8.00,LARGE
+4259,Espresso Beverages,4.00,Flat White,4.00,VENTI
+4437,Bakery,6.67,Banana Nut Bread,7.47,
+4252,Espresso Beverages,3.00,Espresso Con Panna,3.00,GRANDE
+4389,Blended Beverages,5.00,Espresso Frappuccino Blended Coffee,6.00,LARGE
+4282,Espresso Beverages,3.00,Iced Cinnamon Dolce Latte,4.00,GRANDE
+4459,Bakery,3.31,Morning Bun,5.98,
+4551,Mercato,8.00,Roasted Turkey & Dill Havarti Sandwich,8.00,GRANDE
+4516,Sandwiches, Paninis & Salads,4.00,Tomato & Mozzarella,4.00,VENTI
+4025,Cold Brew,4.00,Iced Espresso Classics - Caramel Macchiato,6.00,LARGE
+4103,Iced Tea,7.00,Teavana Shaken Iced Green Tea Lemonade,8.00,LARGE
+4170,Hot Brew,1.00,Blonde Roast,2.00,LARGE
+4189,Hot Brew,3.00,Cold Brew with Salted Cream Cold Foam,3.00,GRANDE
+4467,Bakery,5.37,The Classic - Bantam Bagels (2 Pack),9.36,
+4568,Mercato,7.00,Vegan Superberry Acai,8.00,LARGE
+4101,Iced Tea,3.00,Teavana Shaken Iced Green Tea,3.00,GRANDE
+4493,Yogurt, Fruit & Spreads,3.00,Mango & Coconut Yogurt Bowl,4.00,LARGE
+4231,Espresso Beverages,5.00,Caffe Mocha,5.00,GRANDE
+4002,?Hot Brew,7.00,Cinnamon Dolce Creme,7.00,GRANDE
+4181,Hot Brew,7.00,Coffee Traveler,7.00,VENTI
+4440,Bakery,7.72,Blueberry Oat Cake,9.92,
+4550,Mercato,7.00,Roasted Turkey & Dill Havarti Sandwich,8.00,LARGE
+4079,Evolution Fresh,2.00,Evolution Fresh Organic Green Devotion,2.00,LARGE
+4381,Blended Beverages,3.00,Chocolate Cookie Crumble Creme Frappuccino,4.00,GRANDE
+4075,Evolution Fresh,1.00,Evolution Fresh Orange,1.00,VENTI
+4364,Espresso Beverages,3.00,White Chocolate Mocha,3.00,VENTI
+4228,Espresso Beverages,6.00,Caffe Latte,7.00,GRANDE
+4281,Espresso Beverages,3.00,Iced Cinnamon Dolce Latte,5.00,LARGE
+4353,Espresso Beverages,1.00,Blonde Vanilla Latte,3.00,LARGE
+4510,Sandwiches, Paninis & Salads,6.00,Crispy Grilled Cheese Sandwich,6.00,VENTI
+4525,Mercato,6.00,Chicken & Fig Spread Sandwich,6.00,VENTI
+4191,Hot Brew,1.00,Decaf Pike Place Roast,3.00,LARGE
+4078,Evolution Fresh,2.00,Evolution Fresh Organic Defense Up,2.00,VENTI
+4028,Cold Brew,6.00,Nitro Cold Brew,8.00,LARGE
+4260,Espresso Beverages,2.00,Iced Caffe Americano,4.00,LARGE
+4446,Bakery,6.05,Chocolate Chip Cookie Dough Cake Pop,9.09,
+4427,Hot Breakfast,2.15,Sausage,4.32,
+4186,Hot Brew,5.00,Cold Brew with Cold Foam,5.00,GRANDE
+4498,Yogurt, Fruit & Spreads,5.00,Vegan Superberry Acai,5.00,VENTI
+4507,Sandwiches, Paninis & Salads,6.00,Chicken Caprese,6.00,VENTI
+4374,Blended Beverages,6.00,Caramel Ribbon Crunch Frappuccino,7.00,LARGE
+4450,Bakery,5.36,Confetti Sugar Cookie,6.03,
+4443,Bakery,3.68,Cheese Danish,5.65,
+4558,Mercato,2.00,Smoked Mozzarella & Roasted Pepper Sandwich,2.00,VENTI
+4020,Cold Brew,4.00,Iced Espresso Classics  - Vanilla Latte,5.00,GRANDE
+4267,Espresso Beverages,7.00,Iced Caffe Mocha,7.00,GRANDE
+4552,Mercato,7.00,Roasted Turkey & Dill Havarti Sandwich,8.00,VENTI
+4132,Iced Tea,7.00,Teavana Shaken Strawberry Green Tea Infusion Lemonade,7.00,VENTI
+4099,Iced Tea,6.00,Teavana Shaken Iced Black Tea Lemonade,6.00,VENTI
+4372,Blended Beverages,8.00,Caramel Ribbon Crunch Creme Frappuccino,8.00,GRANDE
+4485,Yogurt, Fruit & Spreads,4.00,Justin's Chocolate Hazelnut Butter,5.00,GRANDE
+4268,Espresso Beverages,6.00,Iced Caffe Mocha,7.00,VENTI
+4543,Mercato,1.00,Holiday Turkey & Stuffing Panini,2.00,VENTI
+4408,Blended Beverages,7.00,S'mores Frappuccino,7.00,GRANDE
+4451,Bakery,4.46,Double Chocolate Chunk Brownie,8.09,
+4172,Hot Brew,1.00,Blonde Roast,1.00,VENTI
+4548,Mercato,4.00,Mango & Coconut Yogurt Bowl,4.00,GRANDE
+4064,Refreshers Beverages,3.00,Very Berry Hibiscus Lemonade Starbucks Refreshers,6.00,LARGE
+4561,Mercato,5.00,Smoked Pork Cubano,5.00,VENTI
+4137,Bottled Drinks,2.78,Iced Espresso Classics - Caramel Macchiato,6.46,
+4196,Hot Brew,3.00,Featured Dark Roast,3.00,VENTI
+4310,Espresso Beverages,2.00,Iced Blonde Flat White,2.00,VENTI
+4481,Yogurt, Fruit & Spreads,5.00,Fresh Blueberries and Honey Greek Yogurt Parfait,6.00,LARGE
+4358,Espresso Beverages,4.00,Vanilla Bean Coconutmilk Latte,4.00,VENTI
+4113,Iced Tea,2.00,Teavana Shaken Iced Pi?a Colada Tea Infusion,2.00,GRANDE
+4380,Blended Beverages,3.00,Chocolate Cookie Crumble Creme Frappuccino,4.00,LARGE
+4347,Espresso Beverages,2.00,Blonde Flat White,3.00,LARGE
+4461,Bakery,6.50,Old-Fashioned Glazed Doughnut,9.28,
+4390,Blended Beverages,6.00,Espresso Frappuccino Blended Coffee,6.00,GRANDE
+4397,Blended Beverages,6.00,Matcha Green Tea Creme Frappuccino,6.00,VENTI
+4204,Hot Brew,2.00,Nitro Cold Brew,3.00,GRANDE
+4119,Iced Tea,4.00,Teavana Shaken Peach Citrus White Tea Infusion Lemonade,4.00,GRANDE
+4120,Iced Tea,4.00,Teavana Shaken Peach Citrus White Tea Infusion Lemonade,4.00,VENTI
+4512,Sandwiches, Paninis & Salads,4.00,Ham & Swiss Panini,4.00,GRANDE
+4501,Sandwiches, Paninis & Salads,4.00,Baja Black Bean Veggie Wrap,4.00,VENTI
+4123,Iced Tea,1.00,Teavana Shaken Pineapple Black Tea Infusion,1.00,VENTI
+4035,Cold Brew,6.00,Nitro Cold Brew with Sweet Cream,6.00,GRANDE
+4159,Bottled Drinks,2.48,Bottled Mocha Frappuccino Coffee Drink,5.22,
+4131,Iced Tea,7.00,Teavana Shaken Strawberry Green Tea Infusion Lemonade,7.00,GRANDE
+4223,Hot Brew,6.00,Vanilla Sweet Cream Cold Brew,6.00,VENTI
+4257,Espresso Beverages,4.00,Flat White,5.00,LARGE
+4250,Espresso Beverages,3.00,Espresso,3.00,VENTI
+4351,Espresso Beverages,4.00,Blonde Vanilla Bean Coconutmilk Latte,4.00,GRANDE
+4448,Bakery,1.48,Cinnamon Raisin Bagel,2.70,
+4053,Refreshers Beverages,2.00,Mango Dragonfruit Starbucks Refreshers Beverage,3.00,GRANDE
+4016,Cold Brew,7.00,Iced Coffee with Milk,10.00,LARGE
+4528,Mercato,4.00,Chipotle Chicken Wrap,5.00,VENTI
+4535,Mercato,2.00,Grilled Chicken & Cauliflower Tabbouleh,5.00,LARGE
+4207,Hot Brew,7.00,Nitro Cold Brew with Cascara Cold Foam,8.00,GRANDE
+4008,Hot Brew,6.00,Vanilla Creme,6.00,GRANDE
+4547,Mercato,4.00,Mango & Coconut Yogurt Bowl,5.00,LARGE
+4136,Bottled Drinks,4.53,Iced Espresso Classics - Caffe Mocha,6.49,
+4076,Evolution Fresh,2.00,Evolution Fresh Organic Defense Up,3.00,LARGE
+4096,Iced Tea,7.00,Teavana Shaken Iced Black Tea,7.00,VENTI
+4031,Cold Brew,6.00,Nitro Cold Brew with Cascara Cold Foam,8.00,LARGE
+4323,Espresso Beverages,3.00,Latte Macchiato,6.00,LARGE
+4500,Sandwiches, Paninis & Salads,4.00,Baja Black Bean Veggie Wrap,5.00,GRANDE
+4003,?Hot Brew,6.00,Cinnamon Dolce Creme,6.00,VENTI
+4166,Bottled Drinks,3.54,Iced Latte - Pumpkin Spice Latte,5.36,
+4176,Hot Brew,3.00,Clover Brewed Coffee,5.00,LARGE
+4005,Hot Brew,7.00,Hot Chocolate,7.00,GRANDE
+4542,Mercato,1.00,Holiday Turkey & Stuffing Panini,2.00,GRANDE
+4261,Espresso Beverages,2.00,Iced Caffe Americano,3.00,GRANDE
+4004,Hot Brew,6.00,Hot Chocolate,8.00,LARGE
+4530,Mercato,2.00,Crispy Grilled Cheese Sandwich,2.00,GRANDE
+4210,Hot Brew,7.00,Nitro Cold Brew with Sweet Cream,7.00,GRANDE
+4280,Espresso Beverages,5.00,Iced Cinnamon Cloud Macchiato,5.00,VENTI
+4213,Hot Brew,7.00,Pike Place Roast,8.00,GRANDE
+4434,Bakery,7.81,Chonga Bagel,9.56,
+4237,Espresso Beverages,2.00,Caramel Cloud Macchiato,2.00,GRANDE
+4179,Hot Brew,7.00,Coffee Traveler,8.00,LARGE
+4073,Evolution Fresh,1.00,Evolution Fresh Orange,4.00,LARGE
+4190,Hot Brew,2.00,Cold Brew with Salted Cream Cold Foam,2.00,VENTI
+4029,Cold Brew,6.00,Nitro Cold Brew,7.00,GRANDE
+4311,Espresso Beverages,1.00,Iced Blonde Vanilla Latte,2.00,LARGE
+4492,Yogurt, Fruit & Spreads,3.00,Lemon Crunch Yogurt Parfait,3.00,VENTI
+4456,Bakery,4.58,Gluten-Free Marshmallow Dream Bar,5.69,
+4357,Espresso Beverages,4.00,Vanilla Bean Coconutmilk Latte,4.00,GRANDE
+4195,Hot Brew,3.00,Featured Dark Roast,3.00,GRANDE
+4071,Refreshers Beverages,3.00,Violet Drink,3.00,GRANDE
+4321,Espresso Beverages,5.00,Iced White Chocolate Mocha,6.00,GRANDE
+4483,Yogurt, Fruit & Spreads,5.00,Fresh Blueberries and Honey Greek Yogurt Parfait,5.00,VENTI
+4048,Refreshers Beverages,7.00,Dragon Drink,7.00,VENTI
+4044,Cold Brew,7.00,Vanilla Sweet Cream Cold Brew,7.00,GRANDE
+4112,Iced Tea,1.00,Teavana Shaken Iced Pi?a Colada Tea Infusion,3.00,LARGE
+4209,Hot Brew,6.00,Nitro Cold Brew with Sweet Cream,9.00,LARGE
+4174,Hot Brew,2.00,Caff? Misto,2.00,GRANDE
+4164,Bottled Drinks,1.58,Iced Coffee Light Sweetened,5.01,
+4557,Mercato,2.00,Smoked Mozzarella & Roasted Pepper Sandwich,2.00,GRANDE
+4221,Hot Brew,6.00,Vanilla Sweet Cream Cold Brew,7.00,LARGE
+4017,Cold Brew,8.00,Iced Coffee with Milk,8.00,GRANDE
+4491,Yogurt, Fruit & Spreads,3.00,Lemon Crunch Yogurt Parfait,3.00,GRANDE
+4562,Mercato,7.00,Strawberry & Toasted Almonds Overnight Grains,9.00,LARGE
+4438,Bakery,1.93,Birthday Cake Pop,5.92,
+4476,Yogurt, Fruit & Spreads,2.00,Avocado Spread,2.00,GRANDE
+4142,Bottled Drinks,7.06,Starbucks Doubleshot Energy Coffee Drink,10.84,
+4060,Refreshers Beverages,4.00,Strawberry Acai Lemonade Starbucks Refreshers,5.00,VENTI
+4140,Bottled Drinks,2.49,Starbucks Doubleshot Coffee Smoothie - Dark Chocolate,4.13,
+4162,Bottled Drinks,7.31,Doubleshot Protein Vanilla,8.51,
+4066,Refreshers Beverages,4.00,Very Berry Hibiscus Lemonade Starbucks Refreshers,4.00,VENTI
+4332,Espresso Beverages,1.00,Blonde Caff? Americano,3.00,LARGE
+4245,Espresso Beverages,5.00,Cinnamon Dolce Latte,7.00,LARGE
+4303,Espresso Beverages,2.00,Iced Blonde Caramel Cloud Macchiato,3.00,GRANDE
+4052,Refreshers Beverages,2.00,Mango Dragonfruit Starbucks Refreshers Beverage,3.00,LARGE
+4317,Espresso Beverages,3.00,Iced Vanilla Latte,6.00,LARGE
+4036,Cold Brew,6.00,Nitro Cold Brew with Sweet Cream,6.00,VENTI
+4424,Hot Breakfast,5.51,Hearty Blueberry Oatmeal,8.85,
+4251,Espresso Beverages,2.00,Espresso Con Panna,5.00,LARGE
+4352,Espresso Beverages,3.00,Blonde Vanilla Bean Coconutmilk Latte,3.00,VENTI
+4306,Espresso Beverages,2.00,Iced Blonde Cinnamon Cloud Macchiato,3.00,GRANDE
+4154,Bottled Drinks,4.17,Bottled Coffee Frappuccino Coffee Drink,6.65,
+4486,Yogurt, Fruit & Spreads,4.00,Justin's Chocolate Hazelnut Butter,4.00,VENTI
+4482,Yogurt, Fruit & Spreads,5.00,Fresh Blueberries and Honey Greek Yogurt Parfait,6.00,GRANDE
+4033,Cold Brew,6.00,Nitro Cold Brew with Cascara Cold Foam,6.00,VENTI
+4354,Espresso Beverages,1.00,Blonde Vanilla Latte,1.00,GRANDE
+4015,Cold Brew,6.00,Iced Coffee,6.00,VENTI
+"4108,Iced Tea,5.00,""Teavana Shaken Iced Passion Tango"""" Tea"",5.00,VENTI"
+4254,Espresso Beverages,7.00,Espresso Macchiato,8.00,LARGE
+4248,Espresso Beverages,2.00,Espresso,3.00,LARGE
+4553,Mercato,4.00,Seasoned Turkey & Green Pepper Pico,6.00,LARGE
+4345,Espresso Beverages,4.00,Blonde Doubleshot On Ice,5.00,GRANDE
+4083,Evolution Fresh,3.00,Evolution Fresh Organic Strawberry Lemonade,3.00,GRANDE
+4001,?Hot Brew,6.00,Cinnamon Dolce Creme,7.00,LARGE
+4010,Cold Brew,2.00,Cold Brew with Cascara Cold Foam,2.00,LARGE
+4458,Bakery,1.36,Lemon Cake Pop,5.04,
+4343,Espresso Beverages,8.00,Blonde Cinnamon Cloud Macchiato,8.00,VENTI
+4043,Cold Brew,7.00,Vanilla Sweet Cream Cold Brew,8.00,LARGE
+4284,Espresso Beverages,5.00,Iced Latte Macchiato,7.00,LARGE
+4147,Bottled Drinks,3.14,Starbucks Doubleshot Energy White Chocolate Drink,5.66,
+4173,Hot Brew,1.00,Caff? Misto,4.00,LARGE
+4573,Mercato,6.00,Za'atar Chicken & Lemon Tahini,6.00,VENTI
+4219,Hot Brew,7.00,Cold Brew Coffee with Milk,8.00,GRANDE
+4537,Mercato,2.00,Grilled Chicken & Cauliflower Tabbouleh,2.00,VENTI
+4270,Espresso Beverages,1.00,Iced Cappuccino with Cold Foam,2.00,GRANDE
+4302,Espresso Beverages,2.00,Iced Blonde Caramel Cloud Macchiato,3.00,LARGE
+4376,Blended Beverages,6.00,Caramel Ribbon Crunch Frappuccino,6.00,VENTI
+4150,Bottled Drinks,5.76,Starbucks Doubleshot Espresso Salted Caramel & Cream,6.94,
+4556,Mercato,2.00,Smoked Mozzarella & Roasted Pepper Sandwich,3.00,LARGE
+4382,Blended Beverages,3.00,Chocolate Cookie Crumble Creme Frappuccino,3.00,VENTI
+4536,Mercato,3.00,Grilled Chicken & Cauliflower Tabbouleh,3.00,GRANDE
+4418,Blended Beverages,5.00,White Chocolate Mocha Frappuccino Blended Coffee,5.00,VENTI
+4269,Espresso Beverages,1.00,Iced Cappuccino with Cold Foam,2.00,LARGE
+4130,Iced Tea,7.00,Teavana Shaken Strawberry Green Tea Infusion Lemonade,8.00,LARGE
+"4107,Iced Tea,5.00,""Teavana Shaken Iced Passion Tango"""" Tea"",5.00,GRANDE"
+4564,Mercato,7.00,Strawberry & Toasted Almonds Overnight Grains,7.00,VENTI
+4403,Blended Beverages,5.00,Mocha Frappuccino Blended Coffee,5.00,VENTI
+4019,Cold Brew,4.00,Iced Espresso Classics  - Vanilla Latte,5.00,LARGE
+4423,Hot Breakfast,4.69,Ham & Cheese Croissant,7.74,
+4165,Bottled Drinks,1.95,Iced Coffee Unsweetened,5.32,
+4240,Espresso Beverages,5.00,Caramel Macchiato,5.00,GRANDE
+4324,Espresso Beverages,4.00,Latte Macchiato,4.00,GRANDE
+4146,Bottled Drinks,4.73,Starbucks Doubleshot Energy Vanilla Drink,6.79,
+4081,Evolution Fresh,2.00,Evolution Fresh Organic Green Devotion,2.00,VENTI
+4279,Espresso Beverages,5.00,Iced Cinnamon Cloud Macchiato,5.00,GRANDE
+4519,Sandwiches, Paninis & Salads,7.00,Turkey Pesto Panini,8.00,VENTI
+4355,Espresso Beverages,1.00,Blonde Vanilla Latte,1.00,VENTI
+4494,Yogurt, Fruit & Spreads,3.00,Mango & Coconut Yogurt Bowl,3.00,GRANDE
+4187,Hot Brew,5.00,Cold Brew with Cold Foam,5.00,VENTI
+4097,Iced Tea,6.00,Teavana Shaken Iced Black Tea Lemonade,6.00,LARGE
+4051,Refreshers Beverages,5.00,Mango Dragonfruit Lemonade Starbucks Refreshers Beverage,5.00,VENTI
+4394,Blended Beverages,5.00,Java Chip Frappuccino Blended Coffee,6.00,VENTI
+4322,Espresso Beverages,5.00,Iced White Chocolate Mocha,5.00,VENTI
+4288,Espresso Beverages,3.00,Iced Skinny Cinnamon Dolce Latte,3.00,GRANDE
+4301,Espresso Beverages,6.00,Iced Blonde Caffe Latte,6.00,VENTI
+4460,Bakery,3.23,Morning Muffin,6.31,
+4128,Iced Tea,3.00,Teavana Shaken Strawberry Green Tea Infusion,4.00,GRANDE
+"4110,Iced Tea,6.00,""Teavana Shaken Iced Passion Tango"""" Tea Lemonade"",6.00,GRANDE"
+4134,Bottled Drinks,2.99,Galvanina Sparkling Water - Lime,5.59,
+4278,Espresso Beverages,4.00,Iced Cinnamon Cloud Macchiato,6.00,LARGE
+4188,Hot Brew,2.00,Cold Brew with Salted Cream Cold Foam,5.00,LARGE
+4469,Protein Boxes & Bowls,2.71,Smoked Turkey,3.47,
+4125,Iced Tea,5.00,Teavana Shaken Pineapple Black Tea Infusion Lemonade,6.00,GRANDE
+4489,Yogurt, Fruit & Spreads,2.00,Justin's Classic Almond Butter,2.00,VENTI
+4566,Mercato,5.00,Turkey Pastrami Reuben,5.00,GRANDE
+4198,Hot Brew,3.00,Iced Coffee,3.00,GRANDE
+4339,Espresso Beverages,5.00,Blonde Caramel Cloud Macchiato,5.00,GRANDE
+4203,Hot Brew,2.00,Nitro Cold Brew,3.00,LARGE
+4178,Hot Brew,3.00,Clover Brewed Coffee,3.00,VENTI
+4182,Hot Brew,2.00,Cold Brew with Cascara Cold Foam,4.00,LARGE
+4356,Espresso Beverages,4.00,Vanilla Bean Coconutmilk Latte,5.00,LARGE
+4157,Bottled Drinks,6.58,Bottled Cold Brew Cocoa and Honey with Cream,8.35,
+4077,Evolution Fresh,2.00,Evolution Fresh Organic Defense Up,3.00,GRANDE
+4244,Espresso Beverages,5.00,Cinnamon Cloud Macchiato,5.00,VENTI
+4184,Hot Brew,3.00,Cold Brew with Cascara Cold Foam,3.00,VENTI
+4325,Espresso Beverages,4.00,Latte Macchiato,4.00,VENTI
+4388,Blended Beverages,1.00,Double Chocolaty Chip Creme Frappuccino Blended Creme,1.00,VENTI
+4416,Blended Beverages,5.00,White Chocolate Mocha Frappuccino Blended Coffee,6.00,LARGE
+4572,Mercato,6.00,Za'atar Chicken & Lemon Tahini,6.00,GRANDE
+4495,Yogurt, Fruit & Spreads,3.00,Mango & Coconut Yogurt Bowl,3.00,VENTI
+4313,Espresso Beverages,1.00,Iced Blonde Vanilla Latte,1.00,VENTI
+4129,Iced Tea,3.00,Teavana Shaken Strawberry Green Tea Infusion,3.00,VENTI
+4497,Yogurt, Fruit & Spreads,5.00,Vegan Superberry Acai,5.00,GRANDE
+4202,Hot Brew,1.00,Iced Coffee with Milk,1.00,VENTI
+4045,Cold Brew,7.00,Vanilla Sweet Cream Cold Brew,7.00,VENTI
+4304,Espresso Beverages,2.00,Iced Blonde Caramel Cloud Macchiato,2.00,VENTI
+4503,Sandwiches, Paninis & Salads,2.00,Chicken & Double-Smoked Bacon,2.00,GRANDE
+4230,Espresso Beverages,5.00,Caffe Mocha,7.00,LARGE
+4183,Hot Brew,3.00,Cold Brew with Cascara Cold Foam,3.00,GRANDE
+4445,Bakery,4.45,Chocolate Chip Cookie,7.10,
+4463,Bakery,7.39,Plain Bagel,11.32,
+4192,Hot Brew,1.00,Decaf Pike Place Roast,1.00,GRANDE
+4386,Blended Beverages,1.00,Double Chocolaty Chip Creme Frappuccino Blended Creme,4.00,LARGE
+4504,Sandwiches, Paninis & Salads,2.00,Chicken & Double-Smoked Bacon,2.00,VENTI
+4419,Hot Breakfast,2.46,Bacon,5.41,
+4505,Sandwiches, Paninis & Salads,5.00,Chicken Caprese,7.00,LARGE
+4243,Espresso Beverages,5.00,Cinnamon Cloud Macchiato,5.00,GRANDE
+4517,Sandwiches, Paninis & Salads,7.00,Turkey Pesto Panini,8.00,LARGE
+4093,Iced Tea,2.00,Nitro Lemon Fog,2.00,VENTI
+"4062,Refreshers Beverages,6.00,""Strawberry Acai Starbucks Refreshers"""" Beverage"",7.00,GRANDE"
+4151,Bottled Drinks,5.03,Starbucks Doubleshot Light Espresso Drink,8.29,
+4532,Mercato,7.00,Farmers' Market Protein Box,9.00,LARGE
+4276,Espresso Beverages,6.00,Iced Caramel Macchiato,6.00,GRANDE
+4420,Hot Breakfast,4.31,Chicken Sausage & Bacon Biscuit,7.84,
+4378,Blended Beverages,4.00,Chai Creme Frappuccino Blended Creme,4.00,GRANDE
+4444,Bakery,3.41,Chocolate Cake Pop,5.60,
+4368,Blended Beverages,3.00,Caramel Frappuccino Blended Coffee,4.00,LARGE
+4319,Espresso Beverages,3.00,Iced Vanilla Latte,3.00,VENTI
+4533,Mercato,8.00,Farmers' Market Protein Box,8.00,GRANDE
+4449,Bakery,7.44,Classic Coffee Cake,10.86,
+4338,Espresso Beverages,5.00,Blonde Caramel Cloud Macchiato,6.00,LARGE
+4059,Refreshers Beverages,5.00,Strawberry Acai Lemonade Starbucks Refreshers,5.00,GRANDE
+4026,Cold Brew,4.00,Iced Espresso Classics - Caramel Macchiato,4.00,GRANDE
+4012,Cold Brew,2.00,Cold Brew with Cascara Cold Foam,2.00,VENTI
+4105,Iced Tea,7.00,Teavana Shaken Iced Green Tea Lemonade,8.00,VENTI
+4406,Blended Beverages,5.00,S'mores Creme Frappuccino,5.00,VENTI
+4074,Evolution Fresh,1.00,Evolution Fresh Orange,2.00,GRANDE
+4377,Blended Beverages,3.00,Chai Creme Frappuccino Blended Creme,6.00,LARGE
+4479,Yogurt, Fruit & Spreads,2.00,Berry Trio Parfait,2.00,GRANDE
+4349,Espresso Beverages,2.00,Blonde Flat White,2.00,VENTI
+4127,Iced Tea,3.00,Teavana Shaken Strawberry Green Tea Infusion,4.00,LARGE
+4040,Cold Brew,7.00,Cold Brew Coffee with Milk,7.00,LARGE
+4274,Espresso Beverages,6.00,Iced Caramel Cloud Macchiato,6.00,VENTI
+4565,Mercato,4.00,Turkey Pastrami Reuben,5.00,LARGE
+4521,Mercato,3.00,Baja Black Bean Veggie Wrap,3.00,GRANDE
+4285,Espresso Beverages,5.00,Iced Latte Macchiato,5.00,GRANDE
+4330,Espresso Beverages,4.00,Starbucks Doubleshot on Ice Beverage,4.00,GRANDE
+4431,Hot Breakfast,3.12,Sous Vide Egg Bites: Ham,7.10,
+4366,Blended Beverages,6.00,Caffe Vanilla Frappuccino Blended Coffee,7.00,GRANDE
+4158,Bottled Drinks,3.52,Bottled Cold Brew Vanilla and Fig with Cream,7.46,
+4055,Refreshers Beverages,4.00,Pink Drink,6.00,LARGE
+4180,Hot Brew,7.00,Coffee Traveler,7.00,GRANDE
+4362,Espresso Beverages,3.00,White Chocolate Mocha,5.00,LARGE
+"4069,Refreshers Beverages,4.00,""Very Berry Hibiscus Starbucks Refreshers"""" Beverage"",4.00,VENTI"
+4256,Espresso Beverages,7.00,Espresso Macchiato,7.00,VENTI
+4499,Sandwiches, Paninis & Salads,4.00,Baja Black Bean Veggie Wrap,4.00,LARGE
+4143,Bottled Drinks,4.58,Starbucks Doubleshot Energy Hazelnut Drink,5.67,
+4226,Espresso Beverages,6.00,Caffe Americano,6.00,VENTI
+4258,Espresso Beverages,4.00,Flat White,4.00,GRANDE
+4263,Espresso Beverages,2.00,Iced Caffe Latte,3.00,LARGE
+4133,Bottled Drinks,5.54,Galvanina Sparkling Water,7.07,
+4466,Bakery,4.08,Strawberry Yogurt Scone,5.42,
+4454,Bakery,6.15,French Toast - Bantam Bagels (2 Pack),7.14,
+4205,Hot Brew,2.00,Nitro Cold Brew,2.00,VENTI
+4407,Blended Beverages,7.00,S'mores Frappuccino,8.00,LARGE
+4297,Espresso Beverages,6.00,Iced Blonde Caffe Americano,6.00,GRANDE
+4415,Blended Beverages,5.00,Vanilla Bean Creme Frappuccino Blended Creme,5.00,VENTI
+4211,Hot Brew,7.00,Nitro Cold Brew with Sweet Cream,7.00,VENTI
+4509,Sandwiches, Paninis & Salads,7.00,Crispy Grilled Cheese Sandwich,7.00,GRANDE
+4468,Protein Boxes & Bowls,7.67,Eggs & Cheese,8.66,
+4375,Blended Beverages,6.00,Caramel Ribbon Crunch Frappuccino,6.00,GRANDE
+4452,Bakery,6.93,Everybody's Favorite - Bantam Bagel (2 Pack),9.26,
+4570,Mercato,7.00,Vegan Superberry Acai,7.00,VENTI
+4253,Espresso Beverages,2.00,Espresso Con Panna,2.00,VENTI
+4291,Espresso Beverages,7.00,Iced Skinny Mocha,7.00,GRANDE
+4122,Iced Tea,2.00,Teavana Shaken Pineapple Black Tea Infusion,2.00,GRANDE
+4300,Espresso Beverages,6.00,Iced Blonde Caffe Latte,6.00,GRANDE
+4432,Hot Breakfast,4.75,Spicy Chorizo,5.31,
+4155,Bottled Drinks,2.39,Bottled Cold Brew Black,5.73,
+4555,Mercato,4.00,Seasoned Turkey & Green Pepper Pico,4.00,VENTI
+4023,Cold Brew,2.00,Iced Espresso Classics - Caffe Mocha,3.00,GRANDE
+4039,Cold Brew,1.00,Cold Brew Coffee,1.00,VENTI
+4296,Espresso Beverages,5.00,Iced Blonde Caffe Americano,6.00,LARGE
+4478,Yogurt, Fruit & Spreads,1.00,Berry Trio Parfait,3.00,LARGE
+4215,Hot Brew,4.00,Cold Brew Coffee,5.00,LARGE
+4175,Hot Brew,1.00,Caff? Misto,2.00,VENTI
+4121,Iced Tea,1.00,Teavana Shaken Pineapple Black Tea Infusion,3.00,LARGE
+4095,Iced Tea,7.00,Teavana Shaken Iced Black Tea,7.00,GRANDE
+4229,Espresso Beverages,6.00,Caffe Latte,6.00,VENTI
+4396,Blended Beverages,6.00,Matcha Green Tea Creme Frappuccino,7.00,GRANDE
+4241,Espresso Beverages,4.00,Caramel Macchiato,4.00,VENTI
+4098,Iced Tea,6.00,Teavana Shaken Iced Black Tea Lemonade,6.00,GRANDE
+4567,Mercato,4.00,Turkey Pastrami Reuben,5.00,VENTI
+4216,Hot Brew,4.00,Cold Brew Coffee,4.00,GRANDE
+4152,Bottled Drinks,1.73,Starbucks Doubleshot Protein Caramel,2.68,
+4222,Hot Brew,6.00,Vanilla Sweet Cream Cold Brew,6.00,GRANDE
+4513,Sandwiches, Paninis & Salads,4.00,Ham & Swiss Panini,4.00,VENTI
+4102,Iced Tea,3.00,Teavana Shaken Iced Green Tea,3.00,VENTI
+4161,Bottled Drinks,3.09,Doubleshot Protein Dark Chocolate,5.73,
+4286,Espresso Beverages,5.00,Iced Latte Macchiato,5.00,VENTI
+4227,Espresso Beverages,6.00,Caffe Latte,7.00,LARGE
+4348,Espresso Beverages,2.00,Blonde Flat White,3.00,GRANDE
+4233,Espresso Beverages,6.00,Cappuccino,7.00,LARGE
+4272,Espresso Beverages,6.00,Iced Caramel Cloud Macchiato,7.00,LARGE
+"4106,Iced Tea,5.00,""Teavana Shaken Iced Passion Tango"""" Tea"",6.00,LARGE"
+4171,Hot Brew,1.00,Blonde Roast,2.00,GRANDE
+4387,Blended Beverages,2.00,Double Chocolaty Chip Creme Frappuccino Blended Creme,2.00,GRANDE
+4383,Blended Beverages,2.00,Coffee Frappuccino Blended Coffee,4.00,LARGE
+4417,Blended Beverages,5.00,White Chocolate Mocha Frappuccino Blended Coffee,5.00,GRANDE
+4085,Evolution Fresh,7.00,Evolution Fresh Organic Super Fruit Greens,8.00,LARGE
+4384,Blended Beverages,3.00,Coffee Frappuccino Blended Coffee,3.00,GRANDE
+4340,Espresso Beverages,5.00,Blonde Caramel Cloud Macchiato,5.00,VENTI
+4314,Espresso Beverages,2.00,Iced Vanilla Bean Coconutmilk Latte,5.00,LARGE
+4117,Iced Tea,7.00,Teavana Shaken Peach Citrus White Tea Infusion,7.00,VENTI
+4212,Hot Brew,7.00,Pike Place Roast,8.00,LARGE
+4429,Hot Breakfast,7.57,Sous Vide Egg Bites: Chicken Chorizo Tortilla,8.99,
+4046,Refreshers Beverages,6.00,Dragon Drink,7.00,LARGE
+4135,Bottled Drinks,3.09,Iced Espresso Classics  - Vanilla Latte,6.18,
+4331,Espresso Beverages,4.00,Starbucks Doubleshot on Ice Beverage,4.00,VENTI
+4326,Espresso Beverages,4.00,Skinny Mocha,6.00,LARGE
+4484,Yogurt, Fruit & Spreads,4.00,Justin's Chocolate Hazelnut Butter,6.00,LARGE
+4379,Blended Beverages,4.00,Chai Creme Frappuccino Blended Creme,4.00,VENTI
+4249,Espresso Beverages,3.00,Espresso,3.00,GRANDE
+4554,Mercato,4.00,Seasoned Turkey & Green Pepper Pico,5.00,GRANDE
+4515,Sandwiches, Paninis & Salads,5.00,Tomato & Mozzarella,5.00,GRANDE
+4232,Espresso Beverages,5.00,Caffe Mocha,5.00,VENTI
+4342,Espresso Beverages,8.00,Blonde Cinnamon Cloud Macchiato,8.00,GRANDE
+4399,Blended Beverages,7.00,Mocha Cookie Crumble Frappuccino,7.00,GRANDE
+4398,Blended Beverages,7.00,Mocha Cookie Crumble Frappuccino,8.00,LARGE
+4305,Espresso Beverages,2.00,Iced Blonde Cinnamon Cloud Macchiato,3.00,LARGE
+4488,Yogurt, Fruit & Spreads,3.00,Justin's Classic Almond Butter,3.00,GRANDE
+4224,Espresso Beverages,6.00,Caffe Americano,8.00,LARGE
+4559,Mercato,5.00,Smoked Pork Cubano,6.00,LARGE
+4401,Blended Beverages,5.00,Mocha Frappuccino Blended Coffee,5.00,LARGE
+4027,Cold Brew,4.00,Iced Espresso Classics - Caramel Macchiato,4.00,VENTI
+4208,Hot Brew,7.00,Nitro Cold Brew with Cascara Cold Foam,7.00,VENTI
+4473,Protein Boxes & Bowls,4.99,Cheese & Fruit,5.51,
+4391,Blended Beverages,5.00,Espresso Frappuccino Blended Coffee,6.00,VENTI
+4265,Espresso Beverages,2.00,Iced Caffe Latte,2.00,VENTI
+4214,Hot Brew,7.00,Pike Place Roast,7.00,VENTI
+"4067,Refreshers Beverages,4.00,""Very Berry Hibiscus Starbucks Refreshers"""" Beverage"",5.00,LARGE"
+4091,Iced Tea,2.00,Nitro Lemon Fog,5.00,LARGE
+4262,Espresso Beverages,2.00,Iced Caffe Americano,3.00,VENTI
+4072,Refreshers Beverages,3.00,Violet Drink,3.00,VENTI
+4100,Iced Tea,2.00,Teavana Shaken Iced Green Tea,3.00,LARGE
+4234,Espresso Beverages,6.00,Cappuccino,7.00,GRANDE
+4167,Bottled Drinks,3.08,Teavana Mango Black Tea,5.42,
+4422,Hot Breakfast,1.87,Double-Smoked Bacon,4.66,
+4220,Hot Brew,7.00,Cold Brew Coffee with Milk,8.00,VENTI
+4465,Bakery,7.53,Sprouted Grain Vegan Bagel,9.31,
+4462,Bakery,1.98,Petite Vanilla Bean Scone,3.32,
+4030,Cold Brew,6.00,Nitro Cold Brew,6.00,VENTI
+4350,Espresso Beverages,3.00,Blonde Vanilla Bean Coconutmilk Latte,5.00,LARGE
+4235,Espresso Beverages,6.00,Cappuccino,6.00,VENTI
+4472,Protein Boxes & Bowls,2.90,PB&J,6.15,
+4197,Hot Brew,2.00,Iced Coffee,3.00,LARGE
+4298,Espresso Beverages,5.00,Iced Blonde Caffe Americano,5.00,VENTI
+4410,Blended Beverages,2.00,Strawberry Frappuccino Blended Creme,4.00,LARGE
+4435,Bakery,6.39,8-Grain Roll,9.55,
+4290,Espresso Beverages,6.00,Iced Skinny Mocha,9.00,LARGE
+4114,Iced Tea,2.00,Teavana Shaken Iced Pi?a Colada Tea Infusion,2.00,VENTI
+4490,Yogurt, Fruit & Spreads,3.00,Lemon Crunch Yogurt Parfait,5.00,LARGE
+4185,Hot Brew,5.00,Cold Brew with Cold Foam,7.00,LARGE
+4049,Refreshers Beverages,5.00,Mango Dragonfruit Lemonade Starbucks Refreshers Beverage,6.00,LARGE
+"4068,Refreshers Beverages,5.00,""Very Berry Hibiscus Starbucks Refreshers"""" Beverage"",5.00,GRANDE"
+4563,Mercato,7.00,Strawberry & Toasted Almonds Overnight Grains,8.00,GRANDE
+4395,Blended Beverages,6.00,Matcha Green Tea Creme Frappuccino,9.00,LARGE
+4496,Yogurt, Fruit & Spreads,4.00,Vegan Superberry Acai,5.00,LARGE
+4329,Espresso Beverages,4.00,Starbucks Doubleshot on Ice Beverage,7.00,LARGE
+4124,Iced Tea,5.00,Teavana Shaken Pineapple Black Tea Infusion Lemonade,7.00,LARGE
+4126,Iced Tea,5.00,Teavana Shaken Pineapple Black Tea Infusion Lemonade,5.00,VENTI
+4148,Bottled Drinks,2.23,Starbucks Doubleshot Espresso & Cream,4.90,
+4511,Sandwiches, Paninis & Salads,4.00,Ham & Swiss Panini,4.00,LARGE
+4199,Hot Brew,2.00,Iced Coffee,2.00,VENTI
+4524,Mercato,6.00,Chicken & Fig Spread Sandwich,6.00,GRANDE
+4400,Blended Beverages,7.00,Mocha Cookie Crumble Frappuccino,7.00,VENTI
+4283,Espresso Beverages,3.00,Iced Cinnamon Dolce Latte,3.00,VENTI
+4163,Bottled Drinks,6.78,Iced Coffee Caramel,8.90,
+4084,Evolution Fresh,3.00,Evolution Fresh Organic Strawberry Lemonade,3.00,VENTI
+4168,Bottled Drinks,3.10,Teavana Peach Green Tea,5.89,
+4014,Cold Brew,7.00,Iced Coffee,7.00,GRANDE
+4337,Espresso Beverages,3.00,Blonde Caff? Latte,3.00,VENTI
+4271,Espresso Beverages,1.00,Iced Cappuccino with Cold Foam,1.00,VENTI
+4471,Protein Boxes & Bowls,4.19,Chicken Wrap,4.99,
+4442,Bakery,4.89,Butter Croissant,7.73,
+4087,Evolution Fresh,7.00,Evolution Fresh Organic Super Fruit Greens,7.00,VENTI
+4413,Blended Beverages,5.00,Vanilla Bean Creme Frappuccino Blended Creme,7.00,LARGE
+4425,Hot Breakfast,1.53,Reduced-Fat Turkey Bacon & Cage Free Egg White Sandwich,3.67,
+4508,Sandwiches, Paninis & Salads,6.00,Crispy Grilled Cheese Sandwich,9.00,LARGE
+4236,Espresso Beverages,2.00,Caramel Cloud Macchiato,3.00,LARGE
+4255,Espresso Beverages,7.00,Espresso Macchiato,7.00,GRANDE
+4360,Espresso Beverages,2.00,Vanilla Latte,2.00,GRANDE
+4436,Bakery,2.81,Almond Croissant,5.73,
+4370,Blended Beverages,3.00,Caramel Frappuccino Blended Coffee,3.00,VENTI
+4341,Espresso Beverages,7.00,Blonde Cinnamon Cloud Macchiato,10.00,LARGE
+4470,Protein Boxes & Bowls,4.91,Chicken BLT,6.55,
+4539,Mercato,5.00,Herbed Chicken & Manchego Cheese Sandwich,5.00,GRANDE
+4544,Mercato,3.00,Honey BBQ Sriracha Chicken Sandwich,6.00,LARGE
+4156,Bottled Drinks,2.39,Bottled Cold Brew Black,5.73,
+4409,Blended Beverages,7.00,S'mores Frappuccino,7.00,VENTI
+4447,Bakery,2.14,Chocolate Croissant,5.98,
+4090,Evolution Fresh,7.00,Evolution Fresh Watermelon,7.00,VENTI
+4009,Hot Brew,6.00,Vanilla Creme,6.00,VENTI
+4518,Sandwiches, Paninis & Salads,8.00,Turkey Pesto Panini,8.00,GRANDE
+4371,Blended Beverages,7.00,Caramel Ribbon Crunch Creme Frappuccino,9.00,LARGE
+4333,Espresso Beverages,1.00,Blonde Caff? Americano,2.00,GRANDE
+4024,Cold Brew,2.00,Iced Espresso Classics - Caffe Mocha,2.00,VENTI
+4141,Bottled Drinks,4.76,Starbucks Doubleshot Coffee Smoothie   Vanilla Honey,7.31,
+4057,Refreshers Beverages,4.00,Pink Drink,4.00,VENTI
+4426,Hot Breakfast,7.04,Roasted Ham,8.10,
+4487,Yogurt, Fruit & Spreads,2.00,Justin's Classic Almond Butter,3.00,LARGE
+4217,Hot Brew,4.00,Cold Brew Coffee,4.00,VENTI
+4411,Blended Beverages,3.00,Strawberry Frappuccino Blended Creme,3.00,GRANDE
+4365,Blended Beverages,6.00,Caffe Vanilla Frappuccino Blended Coffee,9.00,LARGE
+4316,Espresso Beverages,2.00,Iced Vanilla Bean Coconutmilk Latte,2.00,VENTI
+4526,Mercato,4.00,Chipotle Chicken Wrap,6.00,LARGE
+4088,Evolution Fresh,6.00,Evolution Fresh Watermelon,9.00,LARGE
+4206,Hot Brew,7.00,Nitro Cold Brew with Cascara Cold Foam,9.00,LARGE
+4149,Bottled Drinks,6.12,Starbucks Doubleshot Espresso Cubano,7.17,
+4032,Cold Brew,6.00,Nitro Cold Brew with Cascara Cold Foam,7.00,GRANDE
+4007,Hot Brew,6.00,Vanilla Creme,8.00,LARGE
+4138,Bottled Drinks,2.51,Iced Espresso Classics - Skinny Caramel Macchiato,5.42,
+4139,Bottled Drinks,7.78,Iced Espresso Classics - Skinny Vanilla Latte,11.03,
+4247,Espresso Beverages,6.00,Cinnamon Dolce Latte,6.00,VENTI
+4506,Sandwiches, Paninis & Salads,6.00,Chicken Caprese,6.00,GRANDE
+4092,Iced Tea,2.00,Nitro Lemon Fog,3.00,GRANDE
+4264,Espresso Beverages,2.00,Iced Caffe Latte,2.00,GRANDE
+4058,Refreshers Beverages,4.00,Strawberry Acai Lemonade Starbucks Refreshers,6.00,LARGE
+4441,BAKERY,6.71,Blueberry Scone,8.50,
+4309,Espresso Beverages,2.00,Iced Blonde Flat White,2.00,GRANDE
+4104,Iced Tea,8.00,Teavana Shaken Iced Green Tea Lemonade,8.00,GRANDE
+4266,Espresso Beverages,6.00,Iced Caffe Mocha,8.00,LARGE
+4086,Evolution Fresh,7.00,Evolution Fresh Organic Super Fruit Greens,7.00,GRANDE
+4021,COLD BREW,4.00,Iced Espresso Classics  - Vanilla Latte,4.00,VENTI
+4275,Espresso Beverages,6.00,Iced Caramel Macchiato,8.00,LARGE
+4421,Hot Breakfast,7.20,Classic Oatmeal,7.94,
+4414,Blended Beverages,5.00,Vanilla Bean Creme Frappuccino Blended Creme,6.00,GRANDE
+4534,Mercato,7.00,Farmers' Market Protein Box,7.00,VENTI
+4225,Espresso Beverages,6.00,Caffe Americano,6.00,GRANDE
