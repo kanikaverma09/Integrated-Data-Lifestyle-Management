@@ -1,0 +1,87 @@
+
+
+/*########################################################################
+# Opening the BTEQ Script
+##########################################################################*/
+
+
+
+.set width 2555
+.set pagelength 2555
+
+.LOGMECH LDAP
+.LOGON tdprd.td.teradata.com/$tdwallet(itp_td_usr),$tdwallet(itp_td_pass);
+
+
+
+UPDATE     CORE_AZURE_ONLINE_PRODUCT 
+FROM
+(
+	SELECT	
+	Product_Id   as src_Product_Id  
+    ,Product_Category as src_Product_Category
+	,Product_Cost as src_Product_Cost
+	,Product_Name as src_Product_Name
+	,Recom_Sale_Price as src_Recom_Sale_Price
+	,Serving_Size as src_Serving_Size
+	FROM	    STG_AZURE_ONLINE_PRODUCT
+ )
+SRC
+SET  EFF_END_DTTM =  CAST( DATE-1 AS timestamp(0)),CURR_IND = 'N'
+ WHERE	Product_Id   = SRC.src_Product_Id  
+AND EFF_END_DTTM = '9999-12-31 23:59:59' 
+AND (
+COALESCE(SRC.src_Product_Category, 'zzz') <> COALESCE(Product_Category,'zzz') OR
+COALESCE(SRC.src_Product_Cost, 'zzz') <> COALESCE(Product_Cost,'zzz') OR
+COALESCE(SRC.src_Product_Name, 'zzz') <> COALESCE(Product_Name,'zzz') OR
+COALESCE(SRC.src_Recom_Sale_Price, 'zzz') <> COALESCE(Recom_Sale_Price,'zzz') OR
+COALESCE(SRC.src_Serving_Size, 'zzz') <> COALESCE(Serving_Size,'zzz')
+) ;
+ 
+.IF ERRORCODE<>0 THEN .QUIT ERRORCODE; 
+
+ INSERT INTO      CORE_AZURE_ONLINE_PRODUCT  (
+ Product_Id  
+,Product_Category
+,Product_Cost
+,Product_Name
+,Recom_Sale_Price
+,Serving_Size
+,Source_System
+,EFF_START_DTTM
+,EFF_END_DTTM
+,CURR_IND
+,LOAD_DTTM
+ )
+SELECT
+ SRC.Product_Id  
+,SRC.Product_Category
+,SRC.Product_Cost
+,SRC.Product_Name
+,SRC.Recom_Sale_Price
+,SRC.Serving_Size
+,'AZURE' AS Source_System
+,CAST(DATE AS TIMESTAMP(0)) AS EFF_START_DTTM
+,'9999-12-31 23:59:59' AS EFF_END_DTTM
+,'Y'
+,CURRENT_TIMESTAMP(0) AS LOAD_DTTM
+FROM
+    STG_AZURE_ONLINE_PRODUCT SRC
+LEFT JOIN     CORE_AZURE_ONLINE_PRODUCT TGT
+ON SRC.Product_Id   = TGT.Product_Id  
+AND EFF_END_DTTM = '9999-12-31 23:59:59'
+WHERE TGT.Product_Id   IS NULL;
+
+
+.IF ERRORCODE<>0 THEN .QUIT ERRORCODE; 
+
+
+/*########################################################################################### 
+
+#  Closing the BTEQ Script, Session Closed and Logging off 
+
+###########################################################################################*/ 
+
+.LOGOFF 
+
+.QUIT 
