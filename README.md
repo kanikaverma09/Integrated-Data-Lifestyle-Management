@@ -77,8 +77,7 @@ The key components that enable this project are:
 - **Data Types**: CSV, JSON, Geospatial, Temporal
 
 ## Data Model of Project 
-
-![Data Model](https://github.com/user-attachments/assets/3041962e-a1bc-44c3-a422-3634622f9f2d)
+![Data Model](https://github.com/user-attachments/assets/f5de60be-53d0-4d17-ab24-c80ebd714cf3)
 
 ![Architecture Diagram](https://github.com/user-attachments/assets/f9588f3b-74e0-4c7d-a1da-1aa719caf4a9)
 
