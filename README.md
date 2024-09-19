@@ -78,8 +78,8 @@ The key components that enable this project are:
 
 ## Data Model of Project 
 ![Data Model](https://github.com/user-attachments/assets/f5de60be-53d0-4d17-ab24-c80ebd714cf3)
+![Architecture Diagram](https://github.com/user-attachments/assets/45a33a2d-0f60-43fb-9a85-9062f015ab24)
 
-![Architecture Diagram](https://github.com/user-attachments/assets/f9588f3b-74e0-4c7d-a1da-1aa719caf4a9)
 
 
 ## Installation & Setup
