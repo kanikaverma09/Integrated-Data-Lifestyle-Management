@@ -9,6 +9,9 @@ The IT team has implemented ** Teradata Vantage Enterprise** on both Azure and A
 
 Brilliantworks has also enhanced several applications, such as their Call Center, which now operates using a real-time and event-driven data approach. As the business scales, the need for consistent, high-quality data, as well as performance monitoring and optimization, is crucial for maintaining a competitive edge.
 
+![Data](https://github.com/user-attachments/assets/233908ec-728f-4c6d-a9cc-857dbffde2bb)
+
+
 ## Project Objective
 To meet the business objectives of near real-time data availability and enhancing application performance, this project focuses on integrating diverse data sources, standardizing data, and ensuring data quality across the BrilliantWorks multi-cloud environment.
 
