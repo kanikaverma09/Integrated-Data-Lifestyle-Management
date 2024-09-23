@@ -1,0 +1,77 @@
+
+
+/*########################################################################
+# Opening the BTEQ Script
+#Purpose: Load data into Core Transaction Table
+#Created by: Vibhuti
+#Created On: 2024-04-08 
+##########################################################################*/
+
+
+
+.set width 2555
+.set pagelength 2555
+
+.LOGMECH LDAP
+.LOGON tdprd.td.teradata.com/<USERNAME>,<Password>;
+
+INSERT INTO  VS186038.CORE_AZURE_RETAIL_TRANSACTION  (
+Transaction_ID,
+Coupon_Code ,
+Coupon_Type ,
+Created_At ,
+Sell_Date,
+Customer_Name ,
+Customer_Review ,
+Gross_Margin,
+Order_Type ,
+Payment_Type ,
+Amount,
+Serving_Time ,
+Txn_Id ,
+Product_Id ,
+Store_Id ,
+Customer_id ,
+Source_System,
+LOAD_DTTM
+ )
+SELECT
+ Transaction_ID,
+  Coupon_Code ,
+  Coupon_Type ,
+  Cast( Created_At AS TIMESTAMP ) AS Created_At ,
+  SUBSTR(Created_At ,1,10) AS Sell_Date,
+  Customer_Name ,
+  Customer_Review ,
+  Gross_Margin,
+  Order_Type ,
+  Payment_Type ,
+  Amount,
+  Serving_Time ,
+  Txn_Id ,
+  PRDCT.Product_Id AS Product_Id ,
+  STRE.Store_Id ,
+  CUST.Cust_id AS Customer_id ,
+  'Azure' AS Source_System ,
+  Current_Timestamp(0) AS LOAD_DTTM
+FROM
+VS186038.STG_AZURE_RETAIL_TRANSACTION_VW SRC
+INNER JOIN SS255313.STG_AZURE_RETAIL_PRODUCT_VW PRDCT
+ON SRC.Product_Id = PRDCT.Product_Id
+INNER JOIN MP255078.STG_AZURE_RETAIL_CUSTOMER_VW CUST
+ON SRC.Customer_id = CUST.Cust_id
+INNER JOIN KV255007.STG_Azure_Retail_store_VW STRE
+ON SRC.Store_Id = STRE.Store_Id;
+
+.IF ERRORCODE <> 0 THEN .EXIT ERRORCODE; 
+
+
+/*########################################################################################### 
+
+#  Closing the BTEQ Script, Session Closed and Logging off 
+
+###########################################################################################*/ 
+
+.LOGOFF 
+
+.QUIT 

@@ -1,0 +1,102 @@
+	DEFINE JOB Retail_Customer
+	DESCRIPTION 'loading data into table from file'
+	(
+	   DEFINE SCHEMA OPERATOR_SOURCE_SCHEMA
+	   DESCRIPTION 'OPERATORS INFORMATION'
+	   (
+		orderid VARCHAR(200)
+	,custid VARCHAR(200)
+	,orderstatus VARCHAR(200)
+	,totalprice VARCHAR(200)
+	,orderdate VARCHAR(200)
+	,orderpriority VARCHAR(200)
+	,clerk VARCHAR(200)
+	,storeid VARCHAR(200)
+	,shippriority VARCHAR(200)
+	,ordercomment VARCHAR(200)
+	,orderqty VARCHAR(200)
+	,productid VARCHAR(200)
+	,discount VARCHAR(200)
+	   );
+
+
+	   DEFINE OPERATOR LOAD_OPERATOR
+	   DESCRIPTION 'TERADATA PARALLEL TRANSPORTER LOAD OPERATOR'
+	   TYPE LOAD
+	   SCHEMA *
+	   ATTRIBUTES
+	   (
+		  INTEGER TenacityHours   = 1,
+		  INTEGER TenacitySleep   = 1,
+		  INTEGER BufferSize      = 16,
+		  INTEGER MaxSessions     = 1,
+		  INTEGER MinSessions     = 1,
+		  INTEGER ErrorLimit      = 1,
+		  VARCHAR TdpId	      = 	'tdprd.td.teradata.com',
+		  VARCHAR LogonMech       = 'LDAP',
+		  VARCHAR UserName        = '*******',
+		  VARCHAR UserPassword    = '*******',
+		  VARCHAR TargetTable     = 'RK250076.STG_AWS_ORDERS',
+		  VARCHAR LogTable        = 'RK250076.STG_AWS_ORDERS_LOG',
+		  VARCHAR ErrorTable1     = 'RK250076.STG_AWS_ORDERS_ERROR1',
+		  VARCHAR ErrorTable2     = 'RK250076.STG_AWS_ORDERS_ERROR2'
+	   );
+
+	   DEFINE OPERATOR Operator_data_loading
+	   DESCRIPTION 'TERADATA PARALLEL TRANSPORTER DATACONNECTOR OPERATOR'
+	   TYPE DATACONNECTOR PRODUCER
+	   SCHEMA OPERATOR_SOURCE_SCHEMA
+	   ATTRIBUTES
+	   (
+		  VARCHAR FileName      = 'itp_orders.csv',
+		  VARCHAR OpenMode      = 'Read',
+		  VARCHAR Format        = 'DELIMITED',
+		  INTEGER SKIPROWS      = 1, 
+		  VARCHAR TextDelimiter = ',',
+		  VARCHAR DirectoryPath = 'C:\Users\rk250076\OneDrive - Teradata\Ritika - RK250076\rk250076\Projects\ITP\Requirement\Dataset_v0.1\AWS\Day_0'
+	   );
+			 Step Load_Table
+	   (
+		  APPLY 
+		(
+		'INSERT INTO RK250076.STG_AWS_ORDERS
+		(  Order_Id
+		  ,Cust_Id
+		  ,Order_Status
+		  ,Total_Price
+		  ,Order_Date
+		  ,Order_Priority
+		  ,Clerk 
+		  ,Store_Id
+		  ,Ship_Priority
+		  ,Order_Comment
+		  ,Order_Qty
+		  ,Product_Id
+		  ,Discount
+		  ,Source_System
+		  ,Load_Dttm) 
+		  VALUES 
+		  (:orderid
+		   ,:custid
+		   ,:orderstatus
+		   ,:totalprice
+		   ,:orderdate
+		   ,:orderpriority
+		   ,:clerk
+		   ,:storeid
+		   ,:shippriority
+		   ,:ordercomment
+		   ,:orderqty
+		   ,:productid
+		   ,:discount
+		   ,''AWS''
+		   ,Current_Timestamp(6));')
+
+		  TO OPERATOR 
+		(
+		LOAD_OPERATOR
+		)
+		  SELECT * FROM OPERATOR (Operator_data_loading);
+	   );
+	   
+	);

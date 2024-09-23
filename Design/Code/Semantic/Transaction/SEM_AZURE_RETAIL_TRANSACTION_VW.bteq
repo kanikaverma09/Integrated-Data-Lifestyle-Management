@@ -1,0 +1,22 @@
+.LOGMECH LDAP
+.LOGON tdprd.td.teradata.com/$tdwallet(itp_td_usr),$tdwallet(itp_td_pass);
+
+---------------TRANSACTION View----------------
+
+/*============================================================= */
+/* Table: SEMANTIC_AZURE_RETAIL_TRANSACTION                      */
+/*============================================================= */
+/* Project: ITP                                         		*/
+/* Created On: 2024-10-04                                       */
+/* Created By: Vibhuti Singh                                 	*/
+/*============================================================= */
+
+REPLACE VIEW VS186038.SEM_AZURE_RETAIL_TRANSACTION_VW 
+AS
+SEL * FROM VS186038.SEM_AZURE_RETAIL_TRANSACTION;
+
+.LOGOFF 
+PAUSE
+
+
+00:25 24-04-2024

@@ -1,0 +1,64 @@
+
+
+/*########################################################################
+# Opening the BTEQ Script
+#Purpose: Load data into Core Transaction Table
+#Created by: Vibhuti
+#Created On: 2024-04-25 
+##########################################################################*/
+
+
+
+.set width 2555
+.set pagelength 2555
+
+.LOGMECH LDAP
+.LOGON tdprd.td.teradata.com/$tdwallet(itp_td_usr),$tdwallet(itp_td_pass);
+
+CREATE SET TABLE VS186038.SEM_AZURE_RETAIL_TRANSACTION ,FALLBACK ,
+     NO BEFORE JOURNAL,
+     NO AFTER JOURNAL,
+     CHECKSUM = DEFAULT,
+     DEFAULT MERGEBLOCKRATIO,
+     MAP = TD_MAP1
+     (
+      Store_Id INTEGER,
+      Store_Name VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+      Customer_Id INTEGER,
+      Customer_Name VARCHAR(255) CHARACTER SET LATIN CASESPECIFIC,
+      Product_Id INTEGER,
+      Product_Name VARCHAR(255) CHARACTER SET LATIN NOT CASESPECIFIC,
+      Amount DECIMAL(15,2),
+      Gross_Margin DECIMAL(15,2))
+PRIMARY INDEX ( Created_year );
+
+.IF ERRORCODE <> 0 THEN .EXIT ERRORCODE; 
+
+
+Insert INTO VS186038.SEM_AZURE_RETAIL_TRANSACTION
+(Store_Id ,
+      Customer_Id ,
+      Product_Id ,
+      Amount ,
+      Gross_Margin)
+SELECT  
+st.Store_Id,
+cust.Cust_id AS Customer_Id,
+pro.Product_Id AS Product_Id,
+Sum(trans.amount) AS Amount,
+Sum(Gross_Margin) AS Gross_Margin
+FROM
+VS186038.CORE_AZURE_RETAIL_TRANSACTION_VW trans 
+INNER JOIN  AR186005.CORE_AZURE_RETAIL_STORE_VW st
+ON trans.Store_Id=st.Store_Id
+INNER JOIN  AR186005.CORE_AZURE_RETAIL_CUSTOMER_VW cust
+ON trans.Customer_id=cust.Cust_id 
+INNER JOIN  AR186005.CORE_AZURE_RETAIL_PRODUCT_VW pro
+ON trans.Product_Id=pro.Product_Id
+GROUP BY 1,2,3;
+
+.IF ERRORCODE <> 0 THEN .EXIT ERRORCODE; 
+
+.LOGOFF 
+
+
