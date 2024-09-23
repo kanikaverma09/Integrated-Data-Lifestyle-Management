@@ -1,0 +1,51 @@
+
+
+
+/*########################################################################
+# Opening the BTEQ Script
+##########################################################################*/
+
+
+
+.set width 2555
+.set pagelength 2555
+
+.LOGMECH LDAP
+.LOGON tdprd.td.teradata.com/$tdwallet(itp_td_usr),$tdwallet(itp_td_pass);
+
+
+CURRENT VALIDTIME MERGE INTO MP255078.CORE_AZURE_RETAIL_CUSTOMER
+USING
+(
+		SELECT	
+		CAST(Cust_id AS INTEGER) as Src_Cust_id,
+		CAST(Age AS INTEGER) as Src_Age,
+		CASE WHEN TRIM(UPPER(Gender))='MALE' THEN 'M' WHEN TRIM(UPPER(Gender))='FEMALE' THEN 'F' ELSE NULL END  as Src_Gender,
+		REGEXP_REPLACE(TRIM(cust_name),'[^a-zA-Z ]','') as Src_Cust_name
+		FROM	MP255078.STG_AZURE_RETAIL_CUSTOMER_VIEW
+		QUALIFY	ROW_NUMBER() OVER (PARTITION BY CUST_ID ORDER BY LOAD_DTTM DESC) = 1
+)SRC
+	ON Cust_id = SRC.Src_Cust_id
+	WHEN MATCHED THEN UPDATE 
+		SET  Age=SRC.Src_Age,Gender=SRC.Src_Gender,Cust_name=SRC.Src_Cust_name,CURR_IND = 'Y'
+	WHEN NOT MATCHED THEN INSERT 
+		(Cust_id,Age,Gender,Cust_name,Source_System,LOAD_DTTM,CURR_IND ) 
+	VALUES(Src_Cust_id,Src_Age,Src_Gender,Src_Cust_name,'AZURE',CURRENT_TIMESTAMP(0),'Y');
+	
+UPDATE 	MP255078.CORE_AZURE_RETAIL_CUSTOMER SET CURR_IND = 'N' WHERE END(Customer_Validity) IS NOT UNTIL_CHANGED;
+
+
+.IF ERRORCODE<>0 THEN .QUIT ERRORCODE; 
+
+
+/*########################################################################################### 
+
+#  Closing the BTEQ Script, Session Closed and Logging off 
+
+###########################################################################################*/ 
+
+.LOGOFF 
+
+.QUIT 
+
+

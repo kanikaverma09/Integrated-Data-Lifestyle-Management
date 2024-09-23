@@ -1,0 +1,72 @@
+DEFINE JOB Export_to_File
+DESCRIPTION 'Export rows for CUSTOMER'
+(
+DEFINE SCHEMA CUSTOMER_SCHEMA
+ (
+      Cust_id VARCHAR(255) ,
+      Age VARCHAR(255) ,
+      Gender VARCHAR(255)  ,
+      Cust_Name VARCHAR(255) ,
+      Source_System VARCHAR(255) ,
+	  CURR_IND VARCHAR(255) ,
+	  LOAD_DTTM VARCHAR(255) 
+);
+
+
+DEFINE OPERATOR File_Writer 
+	TYPE DATACONNECTOR CONSUMER
+	SCHEMA CUSTOMER_SCHEMA	
+	ATTRIBUTES 
+		(	VARCHAR FileName = 'C:\ITP_sample\output\CUSTOMER_DELTA.csv',	
+ 			VARCHAR Format  = 'DELIMITED',
+ 			VARCHAR OpenMode = 'Write', 
+ 			VARCHAR IndicatorMode = 'N',
+			VARCHAR TextDelimiter = ','
+		); 
+
+
+DEFINE OPERATOR Export_CUSTOMER
+	TYPE EXPORT
+	SCHEMA CUSTOMER_SCHEMA
+	ATTRIBUTES
+		(
+			        
+				VARCHAR TdPid='tdprd.td.teradata.com',
+				VARCHAR LogonMech       = 'LDAP',
+       			VARCHAR UserName		= 'AR186005',
+        		VARCHAR UserPassWord	='*******',
+				
+VARCHAR	SelectStmt = 
+'
+SELECT * FROM
+(
+SELECT CAST(''Cust_id'' AS VARCHAR(255)) Cust_id,
+CAST(''Age'' AS VARCHAR(255)) Age,
+CAST(''Gender'' AS VARCHAR(255)) Gender,
+CAST(''Cust_Name'' AS VARCHAR(255)) Cust_Name,
+CAST(''Source_System'' AS VARCHAR(255)) Source_System,
+CAST(''CURR_IND'' AS VARCHAR(255)) CURR_IND,
+CAST(''LOAD_DTTM'' AS VARCHAR(255)) LOAD_DTTM FROM SYS_CALENDAR.CALENDAR WHERE Calendar_Date=CURRENT_DATE UNION SELECT CAST(Cust_id AS VARCHAR(255)) Cust_id,
+CAST(Age AS VARCHAR(255)) Age,
+CAST(Gender AS VARCHAR(255)) Gender,
+CAST(Cust_Name AS VARCHAR(255)) Cust_Name,
+CAST(Source_System AS VARCHAR(255)) Source_System, 
+CAST(CURR_IND AS VARCHAR(255)) CURR_IND,
+CAST(LOAD_DTTM AS VARCHAR(255))  LOAD_DTTM FROM AR186005.CORE_AZURE_RETAIL_CUSTOMER WHERE CURR_IND = ''Y'' AND CAST(LOAD_DTTM AS DATE) = CURRENT_DATE
+)X ORDER BY 1 DESC;
+'	  
+);
+
+APPLY TO OPERATOR (File_Writer)
+SELECT 
+Cust_id,
+Age,
+Gender,
+Cust_Name,
+Source_System,
+CURR_IND,
+LOAD_DTTM
+
+FROM OPERATOR (Export_CUSTOMER);
+
+);

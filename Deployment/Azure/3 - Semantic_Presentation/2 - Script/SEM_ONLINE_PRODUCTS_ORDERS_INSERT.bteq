@@ -1,0 +1,58 @@
+
+
+/*########################################################################
+# Opening the BTEQ Script
+##########################################################################*/
+
+
+
+.set width 2555
+.set pagelength 2555
+
+.LOGMECH LDAP
+.LOGON tdprd.td.teradata.com/$tdwallet(itp_td_usr),$tdwallet(itp_td_pass);
+
+
+
+DELETE SS255313.SEM_AZURE_ONLINE_PRODUCT_ORDER_VW
+ ;
+
+ 
+.IF ERRORCODE<>0 THEN .QUIT ERRORCODE; 
+
+   INSERT INTO SS255313.SEM_AZURE_ONLINE_PRODUCT_ORDER_VW
+   (Order_Id, Order_Date,
+	Cust_Id, First_Name, Last_Name, Product_Id, Product_Name, Order_Status,
+	Total_Price, Order_Priority, Store_Id, Ship_Priority, Order_Qty,
+	Discount, Discount_Percent, Recomsale_Price)
+
+sel	ORD.Order_Id,
+	Ord.Order_Date,ORD.Cust_Id,ORD.First_Name,ORD.Last_Name,
+	pro.Product_Id,
+	pro.Product_Name,ORD.Order_Status,ORD.Total_Price,ORD.Order_Priority,
+	ORD.Store_Id,ORD.Ship_Priority,
+	ORD.Order_Qty,ORD.Discount,
+	ORD.Discount_Percent,
+	PRO.Recom_Sale_Price
+from	
+RK250076.CORE_AWS_ORDERS_VW ORD
+Inner join 
+SS255313.CORE_AZURE_ONLINE_PRODUCT_VW PRO
+	on ORD.Product_Id=pro.Product_Id
+	where pro.CURR_IND='Y'  
+	and ord.CURR_IND='Y' ;
+	
+
+
+.IF ERRORCODE<>0 THEN .QUIT ERRORCODE; 
+
+
+/*########################################################################################### 
+
+#  Closing the BTEQ Script, Session Closed and Logging off 
+
+###########################################################################################*/ 
+
+.LOGOFF 
+
+.QUIT 

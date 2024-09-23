@@ -1,0 +1,111 @@
+	DEFINE JOB  Retail_Transaction
+	DESCRIPTION 'loading data into table from file'
+	(
+	   DEFINE SCHEMA OPERATOR_SOURCE_SCHEMA
+	   DESCRIPTION 'OPERATORS INFORMATION'
+	(
+	 "id" VARCHAR(255)
+			,Coupon_Code VARCHAR(255)
+			,Coupon_Type VARCHAR(255)
+			,Created_At VARCHAR(255)
+			,Customer_Name VARCHAR(255)
+			,Customer_Review VARCHAR(255)
+			,Gross_Margin VARCHAR(255)
+			,Order_Type VARCHAR(255)
+			,Payment_Type VARCHAR(255)
+			,Amount VARCHAR(255)
+			,Serving_Time VARCHAR(255)
+			,Txn_Id VARCHAR(255)
+			,Product_Id VARCHAR(255)
+			,Store_Id VARCHAR(255)
+			,Customer_id VARCHAR(255)
+	);
+
+
+	   DEFINE OPERATOR LOAD_OPERATOR
+	   DESCRIPTION 'TERADATA PARALLEL TRANSPORTER LOAD OPERATOR'
+	   TYPE LOAD
+	   SCHEMA *
+	   ATTRIBUTES
+	   (
+		  INTEGER TenacityHours   = 1,
+		  INTEGER TenacitySleep   = 1,
+		  INTEGER BufferSize      = 16,
+		  INTEGER MaxSessions     = 1,
+		  INTEGER MinSessions     = 1,
+		  INTEGER ErrorLimit      = 1,
+		  VARCHAR TdpId	      = 	'tdprd.td.teradata.com',
+		  VARCHAR LogonMech       = 'LDAP',
+		  VARCHAR UserName        = '$tdwallet(itp_td_usr)',
+		  VARCHAR UserPassword    = '$tdwallet(itp_td_pass)',
+		  VARCHAR TargetTable     = '   STG_AZURE_RETAIL_TRANSACTION',
+		  VARCHAR LogTable        = '   STG_AZURE_RETAIL_TRANSACTION_LOG',
+		  VARCHAR ErrorTable1     = '   STG_AZURE_RETAIL_TRANSACTION_ERROR1',
+		  VARCHAR ErrorTable2     = '   STG_AZURE_RETAIL_TRANSACTION_ERROR2',
+                  VARCHAR WorkTable       = '   STG_AZURE_RETAIL_TRANSACTION_WRK'
+	   );
+
+	   DEFINE OPERATOR Operator_data_loading
+	   DESCRIPTION 'TERADATA PARALLEL TRANSPORTER DATACONNECTOR OPERATOR'
+	   TYPE DATACONNECTOR PRODUCER
+	   SCHEMA OPERATOR_SOURCE_SCHEMA
+	   ATTRIBUTES
+	   (
+		  VARCHAR FileName      = 'itp_retail_transactions.csv',
+		  VARCHAR OpenMode      = 'Read',
+		  VARCHAR Format        = 'DELIMITED',
+		  INTEGER SKIPROWS      = 1, 
+		  VARCHAR TextDelimiter = '|',
+		  VARCHAR DirectoryPath = 'C:\Users\ar186005\OneDrive - Teradata\Desktop\ITP\Dataset_v0.1\Azure\Day_0'
+	   );
+			 Step Load_Table
+	   (
+		  APPLY 
+		(
+		'INSERT INTO    STG_AZURE_RETAIL_TRANSACTION
+		(  Transaction_ID
+			,Coupon_Code
+			,Coupon_Type
+			,Created_At
+			,Customer_Name
+			,Customer_Review
+			,Gross_Margin
+			,Order_Type
+			,Payment_Type
+			,Amount
+			,Serving_Time
+			,Txn_Id
+			,Product_Id
+			,Store_Id
+			,Customer_id
+			,Source_System
+			,LOAD_DTTM
+		  ) 
+		  VALUES 
+		  (:id
+			,:Coupon_Code
+			,:Coupon_Type
+			,:Created_At
+			,:Customer_Name
+			,:Customer_Review
+			,:Gross_Margin
+			,:Order_Type
+			,:Payment_Type
+			,:Amount
+			,:Serving_Time
+			,:Txn_Id
+			,:Product_Id
+			,:Store_Id
+			,:Customer_id
+			,''Azure''
+			, Current_Timestamp(6)
+		  );')
+
+		  TO OPERATOR 
+		(
+		LOAD_OPERATOR
+		)
+		  SELECT * FROM OPERATOR (Operator_data_loading);
+	   );
+	   
+	);
